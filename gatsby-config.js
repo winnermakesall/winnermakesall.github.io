@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'StrategyBlog',
+    title: 'Winner Makes All',
     description: 'The professional publishing platform',
     siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
   },
@@ -84,11 +84,11 @@ module.exports = {
         siteSpeedSampleRate: 10,
       },
     },
-    // {
-    //     resolve: 'gatsby-plugin-mailchimp',
-    //     options: {
-    //         endpoint: '', // add your MC list endpoint here; see instructions below
-    //     },
-    // },
+    {
+        resolve: 'gatsby-plugin-mailchimp',
+        options: {
+            endpoint: 'https://winnermakesall.us19.list-manage.com/subscribe/post?u=e1cf2c134dee5086a20745638&amp;id=b5adda0630', // add your MC list endpoint here; see instructions below
+        },
+    },
   ],
 };
