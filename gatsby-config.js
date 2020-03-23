@@ -8,8 +8,6 @@ module.exports = {
     siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
   },
 
-  pathPrefix: "/StrategyOS",
-
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
