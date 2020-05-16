@@ -142,23 +142,25 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
         >
           <div css={inner}>
             <SiteHeaderContent>
-              <SiteTitle>
-                {props.data.logo ? (
-                  <img
-                    style={{ maxHeight: '45px' }}
-                    src={props.data.logo.childImageSharp.fixed.src}
-                    alt={config.title}
-                  />
-                ) : (
-                  config.title
-                )}
-                <br />
 
-                Winner Takes All
-              </SiteTitle>
-              <SiteDescription> A site for tech strategy and product</SiteDescription>
-            </SiteHeaderContent>
-            <SiteNav isHome />
+                <SiteTitle>
+                    Winner Makes All
+                    <SiteDescription> A site for tech strategy and product</SiteDescription>
+                 </SiteTitle>
+
+
+              {props.data.logo ? (
+                <img
+                  style={{ maxHeight: '0px' }}
+                  src={props.data.logo.childImageSharp.fixed.src}
+                  alt={config.title}
+                />
+              ) : (
+                config.title
+              )}
+
+           </SiteHeaderContent>
+           <SiteNav isHome />
           </div>
         </header>
         <main id="site-main" css={[SiteMain, outer]}>
@@ -188,7 +190,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query {
-    logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+    logo: file(relativePath: { eq: "img/logoWithTitleV2.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.

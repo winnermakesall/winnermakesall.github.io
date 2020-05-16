@@ -100,7 +100,7 @@ export const PostFullTitle = styled.h1`
 
 const PostFullImage = styled.figure`
   margin: 0 -10vw -165px;
-  height: 800px;
+  height: 600px;
   background: ${colors.lightgrey} center center;
   background-size: cover;
   border-radius: 5px;
@@ -322,7 +322,6 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
 
         {/* Links to Previous/Next posts */}
 
-        // Populates the next and prev articles
         <aside className="read-next" css={outer}>
           <div css={inner}>
             <ReadNextFeed>

@@ -75,7 +75,7 @@ const Footer: React.FunctionComponent = () => {
           <br />
           Created with love in New York City
           <br />
-          Powered by GraphQL and Gatsby.js
+          Built with Gatsby.js
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
