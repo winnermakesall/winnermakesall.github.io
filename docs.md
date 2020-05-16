@@ -3,7 +3,7 @@
 
 ## Instructions on how to deploy
 
-1) git push --force to remote. Yes you want to force push because the remote is in host state, not edit state
+1) git push --force. Yes you want to force push because the remote is in host state, not edit state
 2) npm run deploy => this will make the remote ready to host. Yes this step comes after you push because it edits the remote directly
 
 
@@ -16,4 +16,4 @@
 
 4) Navigation is src/components/SiteNavLogo
 
-5) Control formatting of posts, src/templates/post.tsx the actual content formatting is in src/components/PostContent 
+5) Control formatting of posts, src/templates/post.tsx the actual content formatting is in src/components/PostContent
