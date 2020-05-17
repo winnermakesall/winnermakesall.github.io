@@ -2,7 +2,7 @@
 layout: post
 title: Titans of Stream, How Disney Should Price Plus
 image: featuredImages/disney_tablet.png
-author: Rishub
+author: ["Rishub Nahar","Ghost"]
 date: 2020-05-03T10:00:00.000Z
 tags: ["Disney", "Pricing"]
 draft: false

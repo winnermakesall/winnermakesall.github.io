@@ -221,9 +221,9 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({ post }) => {
       <PostCardContent className="post-card-content">
         <Link className="post-card-content-link" css= {PostCardContentLink} to={post.fields.slug}>
           <header className="post-card-header">
-            {post.frontmatter.tags.map((tag,index) => {
+            {post.frontmatter.tags.map((tagName,index) => {
               return  (<Link to={`/tags/${_.kebabCase(post.frontmatter.tags[index])}/`}>
-                        <PostCardTags > {tag} </PostCardTags>
+                        <PostCardTags > {tagName} </PostCardTags>
                        </Link>)
             })}
             <PostCardTitle>{post.frontmatter.title}</PostCardTitle>
@@ -232,19 +232,24 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({ post }) => {
             <p>{post.excerpt}</p>
           </PostCardExcerpt>
         </Link>
+
         <PostCardMeta className="post-card-meta">
           <AuthorList>
-            <AuthorListItem>
+            {post.frontmatter.author.map((author, index) =>{
+            return (
+              <AuthorListItem>
               <AuthorNameTooltip className="author-name-tooltip">
-                {post.frontmatter.author.id}
-              </AuthorNameTooltip>
-              <Link css={StaticAvatar} to={`/author/${_.kebabCase(post.frontmatter.author.id)}/`}>
-                <AuthorProfileImage
-                  src={post.frontmatter.author.avatar.children[0].fixed.src}
-                  alt={post.frontmatter.author.id}
-                />
-              </Link>
-            </AuthorListItem>
+                 {post.frontmatter.author[index].id}
+               </AuthorNameTooltip>
+               <Link css={StaticAvatar} to={`/author/${_.kebabCase(post.frontmatter.author[index].id)}/`}>
+                      <AuthorProfileImage
+                        src={post.frontmatter.author[index].avatar.children[0].fixed.src}
+                        alt={post.frontmatter.author[index].id}
+                      />
+               </Link>
+             </AuthorListItem>
+                    )
+            })}
           </AuthorList>
           <ReadingTime>{post.timeToRead} min read</ReadingTime>
         </PostCardMeta>

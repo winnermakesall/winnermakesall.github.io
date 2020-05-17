@@ -121,8 +121,15 @@ const Author: React.FunctionComponent<AuthorTemplateProps> = props => {
   const edges = props.data.allMarkdownRemark.edges.filter(
     edge => {
       const isDraft = (edge.node.frontmatter.draft !== true ||
-        process.env.NODE_ENV === 'development');
-      return isDraft && edge.node.frontmatter.author && edge.node.frontmatter.author.id === author.id;
+       process.env.NODE_ENV === 'development');
+       var containsAuthor = false;
+       var i;
+       for (i = 0; i < edge.node.frontmatter.author.length; i++) {
+        if(edge.node.frontmatter.author[i].id == author.id){
+          containsAuthor = true;
+        }
+      }
+      return isDraft && edge.node.frontmatter.author && containsAuthor;
     }
   );
   const totalCount = edges.length;

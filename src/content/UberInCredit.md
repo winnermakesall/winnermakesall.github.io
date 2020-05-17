@@ -2,7 +2,7 @@
 layout: post
 title: Uber in Credit, A Case Study
 image: featuredImages/uberCreditCard.jpg
-author: Rishub
+author: ["Rishub Nahar"]
 date: 2019-04-10T10:00:00.000Z
 tags: ["Uber", "Rideshare"]
 draft: false
