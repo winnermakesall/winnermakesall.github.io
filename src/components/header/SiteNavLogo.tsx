@@ -3,6 +3,9 @@ import * as React from 'react';
 import { css } from '@emotion/core';
 
 import config from '../../website-config';
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
 
 const SiteNavLogoStyles = css`
   flex-shrink: 0;
@@ -14,7 +17,7 @@ const SiteNavLogoStyles = css`
   line-height: 1em;
   font-weight: bold;
   letter-spacing: -0.5px;
-
+  font-family : Tahoma;
   :hover {
     text-decoration: none;
   }
@@ -50,11 +53,7 @@ const SiteNavLogo = () => (
     // tslint:disable-next-line:react-this-binding-issue
     render={(data: SiteNavLogoProps) => (
       <Link className="site-nav-logo" css={SiteNavLogoStyles} to="/">
-        {data.logo ? (
-          <img src={data.logo.childImageSharp.fixed.src} alt={config.title} />
-        ) : (
-          config.title
-        )}
+        {config.title}
       </Link>
     )}
   />

@@ -9,6 +9,7 @@ import { PostFullHeader, PostFullTitle, NoImage, PostFull } from '../templates/p
 import { PostFullContent } from '../components/PostContent';
 import Footer from '../components/Footer';
 import Helmet from 'react-helmet';
+import * as Logo from '../logo.png';
 
 const PageTemplate = css`
   .site-main {
@@ -54,6 +55,8 @@ Thanks so much for stopping by. I hope you enjoy reading through our posts and l
 <hr />
 Rishub Nahar <br/>
 Editor, Winner Makes All
+
+
 
 <br /> <br />
 We are always on the lookout for curious minds interested in technology strategy and product. If you'd like to write with us, shoot us a note at hello@winnermakesall.com
