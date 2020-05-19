@@ -17,3 +17,5 @@
 4) Navigation is src/components/SiteNavLogo
 
 5) Control formatting of posts, src/templates/post.tsx the actual content formatting is in src/components/PostContent
+
+6) When adding author profile pics, its easier to just take their linkedin,

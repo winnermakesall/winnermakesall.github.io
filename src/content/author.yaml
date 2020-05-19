@@ -21,3 +21,9 @@
   location: I write for clarity
   linkedin: "https://www.linkedin.com/in/rishubnahar/"
   profile_image: img/author_backgrounds/nyu.jpg
+- id: Dhruv Mohnot
+  avatar: img/author_backgrounds/dhruv.jpeg
+  bio: Investment Analyst @ Alpine Investors, Math + Econ @ Harvard
+  location: Consumer Tech, Venture Capital
+  linkedin: "https://www.linkedin.com/in/dhruvmohnot/"
+  profile_image: img/author_backgrounds/harvard.jpg

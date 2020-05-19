@@ -25,7 +25,7 @@ ___________
 
 ### Agenda
 <div>
-  <div style=" float: right;width:400px;">
+  <div style=" float: right;max-width:400px;">
       <img src="img/uber_credit_card/framework.png"/>
   </div>
   We will use the following framework to analyze Uber's market entry into credit cards.
@@ -99,7 +99,7 @@ A third way we can segment the market is by **Demographics**. If we break up the
 
 
 
-  <div style="width:500px; margin: auto">
+  <div style="max-width:500px; margin: auto">
     <img src="img/uber_credit_card/credit_card_img.png"/>
   </div>
 
@@ -135,7 +135,7 @@ No matter how promising a market entry looks there must be a clear exit strategy
 
 I don't know the specifics of the Uber Barclays contract, but a smart one would have allowed Uber to sell its stake in the card to Barclays after x years. In this case a card exit would be relatively cheap as the only cost Uber might have to bear is replacing the actual plastic cards. All in all, this would be a solid plan that makes a less painful exit possible.
 
-<div style = "width: 300px; margin: auto">
+<div style = "max-width: 300px; margin: auto">
   <img src="img/uber_credit_card/dribble_cards.jpeg"/>
 </div>
 

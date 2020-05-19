@@ -21,7 +21,7 @@ In this article we will answer the question : **How should Disney price Plus?**
 I find a lot of times in such abstract business problems that have loads of available information, its hard to figure out whats important. I want you to focus on how we use our framework to acquire initial information about the industry and then synthesize that information into testable hypotheses. These hypothesis drive further inquiry and help us focus in on the most relevant information .
 
 Let's get started!
-<div style = "width: 400px; margin: auto">
+<div style = "max-width: 400px; margin: auto">
   <img src="img/disney_plus/mockups.png"/>
 </div>
 
@@ -74,7 +74,7 @@ Now that we know a little more about company goals, let's understand the competi
 1. **Established Competitors** : The obvious incumbent here is Netflix. The $180 billion streaming titan enjoys the subscription of 70% of Americans. However, this titan does have a **potential Achilles heel: Licensed content**. Despite Netflix’s impressive lineup of original shows, licensed content still accounts for 80% of viewing time. And with major pullbacks from Disney and NBC, Netflix is expected to lose content worth 20% of its total viewing time. Netflix is not blind to this and is spending vast sums of money to create original content to fill the void.
 
 
-  <div style=" float: right;width:400px;">
+  <div style=" float: right;max-width:400px;">
   <img src="img/disney_plus/competition.png"/>
   </div>
 
