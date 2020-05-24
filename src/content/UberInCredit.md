@@ -24,8 +24,9 @@ The Uber Card is a partnership between **Uber, Visa, and Barclays**. Barclays is
 ___________
 
 ### Agenda
+
 <div>
-  <div style=" float: right;max-width:400px;">
+  <div style="float: right;  max-width: 400px; margin: auto">
       <img src="img/uber_credit_card/framework.png"/>
   </div>
   We will use the following framework to analyze Uber's market entry into credit cards.
