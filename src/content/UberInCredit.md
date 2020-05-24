@@ -26,12 +26,13 @@ ___________
 ### Agenda
 
 <div>
-  <div style="float: right;  max-width: 400px; margin: auto">
+  <div style=" max-width: 200px; margin: auto">
       <img src="img/uber_credit_card/framework.png"/>
   </div>
-  We will use the following framework to analyze Uber's market entry into credit cards.
+  <br/ >
+  We will use the above framework to analyze Uber's market entry into credit cards.
 
-First, we will determine why (if at all) market entry makes sense. We will do this by asking the 3 questions in white blocks on the right.
+First, we will determine why (if at all) market entry makes sense. We will do this by asking the 3 questions in white blocks
 
 <b>If and only if</b> we find strong positives for each of these questions will we move on to the next piece of the analysis. This will delve into the risks of market entry (Questions in black blocks)
 <div>
