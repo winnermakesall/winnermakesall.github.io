@@ -16,7 +16,7 @@
 - id: Rishub Nahar
   avatar: img/author_backgrounds/rishub.jpg
   bio: Editor @ Winner Makes All, previously @ Palantir, NEA
-  twitter: TryGhost
+  twitter: "https://twitter.com/rishub_nahar"
   website: https://rishubnahar.com/
   location: I write for clarity
   linkedin: "https://www.linkedin.com/in/rishubnahar/"
@@ -27,3 +27,15 @@
   location: Consumer Tech, Venture Capital
   linkedin: "https://www.linkedin.com/in/dhruvmohnot/"
   profile_image: img/author_backgrounds/harvard.jpg
+- id: Tej Chilukuri
+  avatar: img/author_backgrounds/tej.jpeg
+  bio: Product @ SeamlessDocs, CS + Finance @ NYU
+  location: Consumer Tech
+  linkedin: "https://www.linkedin.com/in/ravitejchilukuri/"
+  profile_image: img/author_backgrounds/nyu.jpg
+- id: Alex Hu
+  avatar: img/author_backgrounds/alex_hu.jpeg
+  bio: Product @ Mesmer, CS + Finance @ NYU
+  location: Enterprise Security, Consumer Tech
+  linkedin: "https://www.linkedin.com/in/alex-hu-88a780142/"
+  profile_image: img/author_backgrounds/nyu.jpg
