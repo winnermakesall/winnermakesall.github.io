@@ -38,7 +38,7 @@ const About: React.FunctionComponent = () => (
           <PostFullContent className="post-full-content">
             <div className="post-content">
               <p>
-              I'm not a big fan of the the saying  "winner takes all".              <br /> <br />
+              I'm not a big fan of the the saying  <b>"winner takes all"</b>.              <br /> <br />
 
                It puts the emphasis on the <b>wrong part of the equation. </b>
 
@@ -51,7 +51,7 @@ For winners, the focus is on making, on creation, not on taking.  <br /> <br />
 Thats what we do here at Winner Makes All. We focus on that creation aspect. We break down the products and strategies of today's tech companies and we explore their most challenging business problems.
 
 <br /> <br />
-Thanks so much for stopping by. I hope you enjoy reading through our posts and learn something new! <br />
+Thanks so much for stopping by. I hope you enjoy reading through our posts as much as we enjoyed writing them! <br />
 <hr />
 Rishub Nahar <br/>
 Editor, Winner Makes All
