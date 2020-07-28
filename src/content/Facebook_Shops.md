@@ -128,9 +128,9 @@ Our mockup of how Whatsapp could seamlessly integrate Shops functionality into t
 ###2. Shopping Recommendations
 This is admittedly an obvious play, but the mass amount of transaction data could assist Facebook in building more accurate customer behavior profiles and offering better product recommendations. This could manifest in multiple ways:
 
-Instagram could better recommend products cards in the Explore section
-Facebook could automatically and intelligently place products in a user’s Feed as a form of advertising without the business owner needing to conduct their own extensive segmentation
-The Shops page could be personalized and appear differently for every visitor
+- Instagram could better recommend products cards in the Explore section
+- Facebook could automatically and intelligently place products in a user’s Feed as a form of advertising without the business owner needing to conduct their own extensive segmentation
+- The Shops page could be personalized and appear differently for every visitor
 
 All of these improvements would benefit conversions, as well as boost ROI on advertising spend.
 
@@ -140,6 +140,10 @@ All of these improvements would benefit conversions, as well as boost ROI on adv
 As businesses continue to sell on the Facebook Shops platform, they will require capital to fund purchase orders and growth initiatives. But SMBs generally have a hard time securing loans from traditional banks due to their short credit history and/or lack of large collateral. Additionally, they may just require **micro-injections** to finance small projects instead of large sums of cash.
 
 Some companies that work with SMBs have already recognized this need. For example, Square Capital and Shopify Capital offer small business loans from $500 to $250,000. As businesses/debtors continue to transact over their platforms, the two companies automatically take a portion of their sales, which constantly pays down the principal and “service fee” (aka fixed interest). Providing loans to SMBs may seem like risky business, but Square and Shopify have data on their side. Since they handle their potential debtors’ transactions in the first place, they can extrapolate and analyze historical sales, customer funnels, attrition rates, and overall performance. **Essentially, Square and Shopify can create accurate risk analyses/profiles of loan applicants**, and then choose to provide loans to less risky SMBs at low fees.
+
+<div style = "max-width: 400px; margin: auto">
+  <img src="img/fb_shops/shop_square.png"/>
+</div>
 
 Similarly, as more and more transactions occur within its ecosystem, Facebook could set up a similar system and focus on small SMB loans. Some of the valuable data points it can collect to accurately estimate risk, sales potential, and repayment probability are:
 
@@ -154,6 +158,10 @@ Of course, even with all this data, it’s far from a slam dunk opportunity for 
 On the other hand, instead of financing SMBs, Facebook could finance consumers. If you’ve ever bought something from Warby Parker, Casper, Mirror, or Peloton, you’ve probably seen an option to pay in small monthly installments, instead of shelling out three grand for your stationary bike (that you absolutely must have) at once. That’s powered by Affirm, a point of purchase financing solution with a dual benefit. Businesses see an increase in conversions because it no longer forces consumers to make that huge up-front financial commitment. In turn, it also helps customers spread out the costs in a more manageable way. Affirm makes money by either charging businesses commissions for financing their customers at 0% APR or by charging the end customers interest on their monthly installments for the convenience.
 
 Facebook could/should do the same once Shops grows to become mainstream. This not only would substantially assist SMBs with sales, but also provide another significant revenue stream to Facebook.
+
+<div style = "max-width: 400px; margin: auto">
+  <img src="img/fb_shops/affirm.jpeg"/>
+</div>
 
 ### Conclusion
 It’ll be interesting to see how Facebook rolls out Shops in the coming months and if people actually adopt it. There’s value on the table for both SMBs and Facebook alike, and there’s a lot of ways Facebook can leverage Shops to keep building out a full suite of Social Commerce sales enablement tools in the future. At the same time, growing consolidation in the digital advertising space is worrying. And with continued scrutiny of Facebook misinformation, antitrust, and data privacy issues, it’ll be worth also following the potential societal ramifications of this “super-platform” Facebook keeps building towards.
