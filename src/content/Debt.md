@@ -8,7 +8,7 @@ tags: ["Venture Capital"]
 draft: false
 ---
 
-### Preface
+### Preface:  <br>
 
 "Debt is Bad" - this is a common mantra that pervades Silicon Valley, espoused by upstarts and veterans alike. Certainly debt does not make sense for an early stage software business. For these early stage companies, finding product-market fit is paramount and the high risk nature of these start-ups simply does not play nicely with debt financing.
 
