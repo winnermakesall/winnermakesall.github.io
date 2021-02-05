@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Winner Makes All]]></title><description><![CDATA[The professional publishing platform]]></description><link>https://gatsby-casper.netlify.com</link><generator>RSS for Node</generator><lastBuildDate>Fri, 05 Feb 2021 00:56:50 GMT</lastBuildDate><item><title><![CDATA[Facebook Shops, A Deep Dive]]></title><description><![CDATA[Preface:  Facebook has been in the news quite a bit recently over free speech regulation controversies, employee walkouts, and potential…]]></description><link>https://gatsby-casper.netlify.com/Facebook_Shops/</link><guid isPermaLink="false">https://gatsby-casper.netlify.com/Facebook_Shops/</guid><pubDate>Sun, 26 Jul 2020 10:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Preface:  &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;Facebook has been in the news quite a bit recently over free speech regulation controversies, employee walkouts, and potential antitrust challenges to both the Giphy acquisition ($400 million for GIFs!?) and the $5.7 billion Jio Platforms investment. Amidst all the activity, last month, the social media giant also announced the launch of “Facebook Shops”, in another step towards a full suite of small business sales enablement products for Facebook. While the move hasn’t received as much media fanfare, this release is pretty big news and investors certainly think so too, as $FB stock rose 8% in the three days following the official announcement. But what exactly is Shops and what does it mean for Facebook? We look to answer those questions as we take a deep dive into Facebook Shops.&lt;/p&gt;
+&lt;h3&gt;Agenda&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;What is Facebook Shops?&lt;/li&gt;
+&lt;li&gt;How this Affects SMBs&lt;/li&gt;
+&lt;li&gt;How this Affects Facebook&lt;/li&gt;
+&lt;li&gt;Potential Next Steps&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;30 Second Summary&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Facebook Shops creates a unique fully native social shopping experience for users that should give SMBs (small-medium sized businesses) better ad attribution and increased sales conversions.&lt;/li&gt;
+&lt;li&gt;Facebook Shops gives Facebook access to valuable first-party shopper data which should strengthen their advertising business and help them build upon their “Walled Garden of proprietary data”&lt;/li&gt;
+&lt;li&gt;It opens up future opportunities for a potential Whatsapp integration and stronger shopping recommendations.&lt;/li&gt;
+&lt;li&gt;Shops may even lay the foundation for a further push into the financial services industry through small SMB loans and point-of-sale financing.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;What is Facebook Shops?&lt;/h2&gt;
+&lt;p&gt;Facebook &lt;em&gt;loves&lt;/em&gt; drawing inspiration from other companies. First, Stories from Snapchat. Now, online storefronts from Shopify. Here are the 5 main features of Facebook Shops:&lt;/p&gt;
+&lt;p&gt;Note: If you’re wondering why there aren’t a lot of storefronts on Facebook yet, it’s because they’re planning to roll out functionality and access to all business accounts over the coming months.&lt;/p&gt;
+&lt;h4&gt;1. The Storefront&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Business Facing&lt;/strong&gt;: Business owners will be able to spin up a customized digital storefront that’s unified across Facebook and Instagram and native to the platform. Once business owners create their Shop, they can then add products one by one or import them all from their preexisting e-commerce site. In addition, they can create collections around the products to convey a theme or simply display a curated selection. All of this is simultaneously updated across Facebook and Instagram.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Customer Facing&lt;/strong&gt;: Users can access a business’s Shop directly on their Facebook and Instagram profiles (as seen in the images below) and buy products without ever being forced to go to another website. Later this year, Instagram will add a Shop tab in Instagram Explore to allow users to browse products from various companies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/752a698689416907e327bf4a8ef1e5d6/330c1/fb_shops.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAID/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/2gAMAwEAAhADEAAAAdYxUhSTF//EABgQAAMBAQAAAAAAAAAAAAAAAAECEgAD/9oACAEBAAEFAik8wFYdFhqOo4sW3//EABgRAQEAAwAAAAAAAAAAAAAAAAEAAhNR/9oACAEDAQE/AdmPJRb/xAAYEQEAAwEAAAAAAAAAAAAAAAABAAITUf/aAAgBAgEBPwHK3YVQn//EABgQAAMBAQAAAAAAAAAAAAAAAAABETEC/9oACAEBAAY/Auepo4lpDWaVun//xAAbEAACAwADAAAAAAAAAAAAAAABEQAhMVFhkf/aAAgBAQABPyESNy8hGRoLyHxJUi5WBUMuAYQJbDbRdz//2gAMAwEAAgADAAAAEEsf/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAxof/aAAgBAwEBPxALeCcIX//EABkRAQACAwAAAAAAAAAAAAAAAAEAESFRof/aAAgBAgEBPxBvx07hAWf/xAAaEAEBAAMBAQAAAAAAAAAAAAABEQAhUfAx/9oACAEBAAE/EHs+oElq3bhPqDiGkxRJg02dXv3EeUVQ9cl3rQdXxgERJeM//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;fb shops&quot;
+        title=&quot;&quot;
+        src=&quot;/static/752a698689416907e327bf4a8ef1e5d6/4acc0/fb_shops.jpg&quot;
+        srcset=&quot;/static/752a698689416907e327bf4a8ef1e5d6/e33f8/fb_shops.jpg 293w,
+/static/752a698689416907e327bf4a8ef1e5d6/d5ce0/fb_shops.jpg 585w,
+/static/752a698689416907e327bf4a8ef1e5d6/4acc0/fb_shops.jpg 1170w,
+/static/752a698689416907e327bf4a8ef1e5d6/04b0f/fb_shops.jpg 1755w,
+/static/752a698689416907e327bf4a8ef1e5d6/330c1/fb_shops.jpg 1920w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;2. Facebook Checkout&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Easy Pay&lt;/strong&gt;:  When placing an order, customers will have the ability to use Facebook Pay across all stores instead of inputting credit card information every time. This easy, one-click purchase system would be present for all Shops.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Transaction Fees&lt;/strong&gt;:  Facebook will charge businesses “5% per shipment, or a flat fee of $0.40 for shipments of $8.00 or less”. This fee includes taxes and the cost of payment processing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;3. Streamlined Communication&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Customers can seamlessly message the business over Messenger, Instagram DM’s, or Whatsapp to ask questions about products or shipping. Once an order is placed, customers will then receive order/shipping updates through Messenger or Instagram DM’s.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;4. New Selling Channel&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Facebook and Instagram Live:&lt;/strong&gt; If a business is streaming over Facebook Live or Instagram Live, customers can now easily swipe up on mobile or click a link on desktop to purchase any products being showcased.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Loyalty Programs:&lt;/strong&gt; Businesses can create loyalty programs that offer dynamic incentives to customers through targeted advertisements or automated messages for higher engagement. For example, customers can rack up “points” as they shop or complete certain activities (following an account), which they will then be able to redeem for product discounts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;5. Partnerships&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Finally, Facebook Shops isn’t operating in a vacuum. In fact, Facebook partnered with Shopify, BigCommerce, WooCommerce, and many other major players to provide easy integrations and allow entrepreneurs to access as many selling channels as possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How this Affects Small/Medium Businesses&lt;/h2&gt;
+ &lt;br&gt;
+&lt;p&gt;&lt;strong&gt;1. The Need For E-Commerce:&lt;/strong&gt; &lt;br&gt;
+The Covid-19 pandemic has further heightened the importance of having an online e-commerce presence. With nationwide stay-at-home orders, millions of Americans have turned to online shopping and, whether they like it or not, are developing new online buying habits. Facebook Shops thus gives SMBs who need an e-commerce solution a lightweight option to set up a virtual storefront and facilitate online transactions at no upfront cost on a platform that millions of people use and trust.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Reducing Friction in the User Purchasing Journey:&lt;/strong&gt; &lt;br&gt;
+As for the reported 90 million SMBs already on Facebook, being able to set up an additional storefront on a platform where they already do a majority of their online advertising, should help reduce friction in the user purchasing journey, which would ultimately lead to more sales. As eMarketer’s Andrew Lipsman puts it, Facebook is generally seen as an “upper-level funnel” where people discover products they might purchase in the future. &lt;strong&gt;Adding purchasing capabilities would flatten that funnel, reducing the steps the user has to take to ultimately purchase that item they discovered on Facebook.&lt;/strong&gt; The auto-filling easy pay feature across all shops (which leverages Facebook’s unique network effect) should also help increase conversions as purchases can be made in a matter of seconds (rather than minutes).  And lastly, a reduced number of steps in the purchasing journey means fewer steps that need to be tracked, which should allow Facebook to provide clearer and simpler attribution models for SMBs.&lt;/p&gt;
+&lt;h2&gt;How this Affects Facebook&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;1. Filling a Void in E-commerce with Social Commerce:&lt;/strong&gt; &lt;br&gt;
+When you know you want to buy something, Amazon is unequivocally the place you go to. But, as Jeremy Bowman from the Motley Fool says, Facebook provides something that Amazon can’t: discovery. As we touched on earlier, Facebook and Instagram are often sources of ideas for future purchases. A study done by GlobalWebIndex with over 100,000 internet US and UK internet users, found that 42% of consumers research products through social media. Whether it’s that nasty Paul George dunk with his new Nike PG4 shoes or your friend’s comment about Shake Shack, brands are everywhere on Facebook and users are constantly interacting with them.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4c15abc1ebc77b997ec62c0df1e9d7ba/46077/social_commerce.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 905px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 62.87292817679558%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAAB10lEQVQoz6WSS2sTURzF8x38Bj6g+AF0oct2aYtWV1mKO9vaLpo2ceHGFyKaolL7NJNG0UWh2lq6aaIiKIHaZGaS1EmCYg02j5nJvbnzuDcz8X8nRkihUOi5Pw5n/twzc5kZX+sI8pXLZVmW8/l8LpdTFCWvKLIkFQsFuLQ8IYRwt2ACc142DKNWq2mapqoqBHBd46pWqwRjRm3TIB2MjhtNxnj5SMfOfFpZvndtNTz69uH1tamxd49GAMir4RvxyO2EcLeLyJ2PsQef34RRpcTLW+vC3Ehv7OaVpeBgdPLiUvCSxyB4ZPwCEA0M/EcY738Zuvz6lr/66zsvmxYmlk5MHRPVoqRhaBAQrhALQSZmvWHqdVwBWi13/7Hfr9wfunosONozMXwyMHwC3ONUYOh4aOz08ym/bRFouY7jwmo2nSYDXJffyPentCNub2SleEaKZ6VEVoxnxE0AJulvazl507YJY4ZtY8BxWNeTS7tft5LPpJSQ3n4hpaJiSshIr0SeBU3dYRQ3GnuovovQb137SSnxWv/O70t+efL0cc/CzLm56bPAPPczi7Pno4t9P4of+EbXOfBTMcYotUHw03CHBdE2KbVcT7ze0f5yewjAG2mHNofRXybLnZkd1bk6AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;fb shops&quot;
+        title=&quot;&quot;
+        src=&quot;/static/4c15abc1ebc77b997ec62c0df1e9d7ba/46077/social_commerce.png&quot;
+        srcset=&quot;/static/4c15abc1ebc77b997ec62c0df1e9d7ba/bc34b/social_commerce.png 293w,
+/static/4c15abc1ebc77b997ec62c0df1e9d7ba/da9f0/social_commerce.png 585w,
+/static/4c15abc1ebc77b997ec62c0df1e9d7ba/46077/social_commerce.png 905w&quot;
+        sizes=&quot;(max-width: 905px) 100vw, 905px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This makes Shops a natural next step for Facebook to further monetize their audience and create a unique social commerce experience that keeps users on Facebook. And with 2.4 billion daily active users across Facebook, Whatsapp, and Instagram – each spending around &lt;strong&gt;38 minutes a day across the apps&lt;/strong&gt; – Shops represents a big opportunity. Amazon should continue to be the place to go if you know you want to buy something, but Facebook Shops could very well be the place for casual shoppers simply looking for inspiration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Strengthening Facebook’s Advertising Business:&lt;/strong&gt; &lt;br&gt;
+While additional revenue from Shops’ transaction fees would diversify Facebook’s revenue stream, advertising is where Shops should bring the biggest benefits for Facebook. Facebook and Google have a duopoly on the digital ads market, but Amazon has seen the biggest growth going from practically &lt;strong&gt;$2.96 billion in 2016 to over $14 billion&lt;/strong&gt; in ads revenue last year.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4d489eab924ef86f3ca89cc912db5d4b/ab9d5/amazon_ad.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 638px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 57.993730407523515%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAAB2klEQVQoz2P4TwFg+Pfv3/v371+/fg0k3759+/z587cw8ObNm1evXv0Cg58/f/6Cgb9//yI0X7ly5ejRo+fPn79w4cKRI0dOnz594sQJIPfs2bNnzpz58uXL169f34ABxMTv339ANQPxDzCAmPobDIBcoFUQG37+/vnrz08g49efX1++f/76/fPvP78Qmv8hgb9gAOdCFP35+wdIztgwWT1aTjtOadX+5RBBqOa/QF1AAsj8/+/P399gBNJQu640dKp3/KzQ3/9+Ni9sYjBgYDBlmLZhMlDq95/fDLhCEmKtcb0BQywDazLD22+ve5d3KoZLqkXJztkyA6H5y+/PT788fvLl0a9/v15+eV61N79id+700/1AKdduS81KGaUSkXff33YubWMwZ2CwYZi5cQpC87K786IPe/nvs93wcMXj9w/UpogYzpIPXukKlPKZ4ChTzKdeIfnxx4cpaycI+3JKBPIv2jEPofn9r7eHbx849ejoh1/vgNybz6+fuXXy5ZcXQPbjt4+OXjx888l1YFh8/PLx5KUTZ6+d+fL9C8hf//9B/fzx7afvn79D2D++//jw9gPU53//vX755tdPaNx8eP/x06fPiBQGjar//yCGQRA8wLCS8CgEAE8ebIIeqR/fAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;fb shops&quot;
+        title=&quot;&quot;
+        src=&quot;/static/4d489eab924ef86f3ca89cc912db5d4b/ab9d5/amazon_ad.png&quot;
+        srcset=&quot;/static/4d489eab924ef86f3ca89cc912db5d4b/bc34b/amazon_ad.png 293w,
+/static/4d489eab924ef86f3ca89cc912db5d4b/da9f0/amazon_ad.png 585w,
+/static/4d489eab924ef86f3ca89cc912db5d4b/ab9d5/amazon_ad.png 638w&quot;
+        sizes=&quot;(max-width: 638px) 100vw, 638px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Amazon’s success has primarily been centered around the fact that it has an enormous amount of shopper data by virtue of being the top destination for product searches and purchases. Just as importantly though, since transactions occur in the same ecosystem as the ads being run, Amazon can accurately attribute ad impressions directly to actual purchases, giving ad buyers a clear picture of the effectiveness of their campaigns.With Shops, Facebook can emulate Amazon by generating their own shopper data to improve ad retargeting and provide clearer ad attribution. This should make Facebook ads more valuable and even a small increase in ad prices could translate to &lt;strong&gt;billions&lt;/strong&gt; of dollars in additional revenue. Deutsche Bank’s Lloyd Walmsley, for example, thinks Shops could drive as much as $30 billion in incremental revenue. And, as Mark Zuckerberg himself says, “we know that if Shops are valuable for businesses they’re going to in general want to bid more for ads”.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. First-Party Data and Building a “Walled Garden”&lt;/strong&gt; &lt;br&gt;
+There’s no question that the ad-tech space has been in the midst of a significant shift ever since Google’s announcement in January that it would be eliminating third party cookies. At a high level, third party cookies are pieces of data placed onto your browser by advertisers on a website where their ads are displayed, that allow advertisers to track your activity and send you targeted ads. So if you’re on the New York Times, for example, third party cookies are what allows digital advertisers to send you those creepy ads about the Adidas shoes you just looked at.&lt;/p&gt;
+&lt;p&gt;Regardless of whether Google’s intentions behind eliminating third party cookies were for the “greater good” of privacy or not, the move has put a higher emphasis on first-party data, which is data collected by the owner of the site you are visiting. First-party data typically consists of a user’s identity, such as a name or email, as well as behaviors, such as browsing history or purchase patterns. Generally, first-party data is seen as  “less creepy” since it is voluntarily given and helps improve a user’s experience on that website  (i.e. storing passwords or auto-filling credit card payments).  &lt;/p&gt;
+&lt;p&gt;As such, those who stand to gain the most from the death of third party cookies, are those who generate the most first-party data. And those players are namely Facebook, Google, and Amazon due to the “Walled Garden” nature of their ecosystems. They have access to and control all the first-party data within each of their ecosystems (hence the “Wall”) which forces advertisers to use their marketing tools as opposed to other third-party digital advertising tools if they want access to the ecosystem.  &lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/22a87a2ee8971802b9e911a8f95d3568/a24f3/ad_rev.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 40.88397790055248%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABIUlEQVQY042Rz0rDQBDG+xy+lHfvvopIj148Ch4Ej+JJvHjwASRoLGlCmyYtiEl3N9ns/+w4mwTFQ6EfZPg27G/2Y2YGAMYYrfVYR6OUstZ67/vDQnCG33ZbfsYfy2SZJEkURVmWxXFcliXewC76v/BP13VCCGwdYOectk5JIZUWKjyrpMR7cECIjSbAnO3JbhVOToNt4WgF2D/P7fUp8M3DAs7vuXJQr1eiaToutdIYElPIIQtWDDz6KTa8XLmbMxDFxSucXPbEAtzdQrJ5qh7XfPH+Fld1laYp55xSir3atsU6wbxh37scDWuavPzCKHVR6LYr9jkTlBKKQyCE4JuMMTHoDzbW4qymnUnRe6+MsWGMrndhK773bhDu79cg/AM5D8f8xBlWtAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;fb shops&quot;
+        title=&quot;&quot;
+        src=&quot;/static/22a87a2ee8971802b9e911a8f95d3568/913fc/ad_rev.png&quot;
+        srcset=&quot;/static/22a87a2ee8971802b9e911a8f95d3568/bc34b/ad_rev.png 293w,
+/static/22a87a2ee8971802b9e911a8f95d3568/da9f0/ad_rev.png 585w,
+/static/22a87a2ee8971802b9e911a8f95d3568/913fc/ad_rev.png 1170w,
+/static/22a87a2ee8971802b9e911a8f95d3568/efb0c/ad_rev.png 1755w,
+/static/22a87a2ee8971802b9e911a8f95d3568/79b58/ad_rev.png 2340w,
+/static/22a87a2ee8971802b9e911a8f95d3568/75c6b/ad_rev.png 3510w,
+/static/22a87a2ee8971802b9e911a8f95d3568/a24f3/ad_rev.png 3620w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Shops in turn helps Facebook continue to build their “Walled Garden”. It keeps users on Facebook, as opposed to a retailer’s site, helping them generate more first-party data. &lt;strong&gt;This in turn helps Facebook give users beneficial features like easy pay (auto-filled payments information across all Shops) and SMBs better attribution and ad retargeting&lt;/strong&gt;. So without third-party cookies, Facebook’s first-party data becomes even more valuable, raising the relative ROI of Facebook ads and thus, whether you like it or not, the dependency advertisers will likely have on “Walled Gardens” like Facebook, Google, and Amazon in the future.&lt;/p&gt;
+&lt;h2&gt;Potential Next Steps&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;As mentioned in the beginning, Facebook Shops is most likely the first step towards a full suite of product offerings to assist/enable SMBs. We have a couple of ideas for what could come next:&lt;/p&gt;
+&lt;h3&gt;1. Buying Within Whatsapp&lt;/h3&gt;
+&lt;p&gt;Messaging has more and more evolved into a platform ripe with features. Apple introduced apps and services specifically tailored for iMessage (Game Pigeon 😍) and Tencent created an entire suite of services around WeChat. Facebook is looking to do the same with WhatsApp and will probably integrate Shops functionality into the messaging platform. &lt;strong&gt;Potential customers should be able to talk to businesses, add products to a cart from inline cards or full-page displays, pay with Facebook Pay, and receive updates on shipping, all within WhatsApp&lt;/strong&gt; (see videos below for our mockup of what that process could look like). As Tencent proved with WeChat, selling through messaging platforms is a validated channel and could be just as lucrative for Facebook, opening up another much needed complementary revenue stream through sales commissions.&lt;/p&gt;
+&lt;p&gt;Our mockup of how Whatsapp could seamlessly integrate Shops functionality into the app
+(left: SMB Perspective | right: Customer Perspective)&lt;/p&gt;
+&lt;table style=&quot;margin: auto&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+    &lt;td&gt;&lt;img style=&quot;max-width:200px&quot; src=&quot;/SMB-ddf8beed341150b995938295e830e608.gif&quot;&gt; &lt;/td&gt;
+    &lt;td&gt; &lt;img style=&quot;max-width:200px&quot; src=&quot;/customer_view-9948f9e53cb6bd42482ae9f39a712b77.gif&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3&gt;2. Shopping Recommendations&lt;/h3&gt;
+&lt;p&gt;This is admittedly an obvious play, but the mass amount of transaction data could assist Facebook in building more accurate customer behavior profiles and offering better product recommendations. This could manifest in multiple ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instagram could better recommend products cards in the Explore section&lt;/li&gt;
+&lt;li&gt;Facebook could automatically and intelligently place products in a user’s Feed as a form of advertising without the business owner needing to conduct their own extensive segmentation&lt;/li&gt;
+&lt;li&gt;The Shops page could be personalized and appear differently for every visitor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of these improvements would benefit conversions, as well as boost ROI on advertising spend.&lt;/p&gt;
+&lt;h3&gt;3. Small SMB Loans&lt;/h3&gt;
+&lt;p&gt;As businesses continue to sell on the Facebook Shops platform, they will require capital to fund purchase orders and growth initiatives. But SMBs generally have a hard time securing loans from traditional banks due to their short credit history and/or lack of large collateral. Additionally, they may just require &lt;strong&gt;micro-injections&lt;/strong&gt; to finance small projects instead of large sums of cash.&lt;/p&gt;
+&lt;p&gt;Some companies that work with SMBs have already recognized this need. For example, Square Capital and Shopify Capital offer small business loans from $500 to $250,000. As businesses/debtors continue to transact over their platforms, the two companies automatically take a portion of their sales, which constantly pays down the principal and “service fee” (aka fixed interest). Providing loans to SMBs may seem like risky business, but Square and Shopify have data on their side. Since they handle their potential debtors’ transactions in the first place, they can extrapolate and analyze historical sales, customer funnels, attrition rates, and overall performance. &lt;strong&gt;Essentially, Square and Shopify can create accurate risk analyses/profiles of loan applicants&lt;/strong&gt;, and then choose to provide loans to less risky SMBs at low fees.&lt;/p&gt;
+&lt;div style=&quot;max-width: 400px; margin: auto&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/aa2f95dce9aa8ebe10a1d0438284b587/e6836/shop_square.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 74.02597402597402%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACDklEQVQ4y51UW08aQRTmtzXpm08kQAiPPPUP8IQmSlzaqE1oIaVVIjejtUndYFOhwAMQLU2w9hIphlpqmkCACJRSbt3drzNjR3Z1xaQnezJnvpn55txmDSCiKAr4qCgyZKJabGKrMb01g3ajDLXI8oSY2lw5pneh4SpZ7WcR3xp5dnCa0PXBYKAhZh7yMBlZ5wtef57FongXifcvII0U5HJZ+Hw+9Ho9lMtlVCoVlEolBAIBOJ1O1Ot1dDqdiYcXt0kMKHzfQuEsDOHlDCKZFTzxPYXZbIbVaoXNZoPJZILFYoHRaGSYIAiw2+2MlHvNPJSVC8K3p0EcnPoxt30HC5v3sL9/gGg0inw+D1EU4fF44HA4kE6nkclkEIvF4PV62VlJktQhk/jJNxz/RuPXCT6eJXHy49O1vI3HY3S73ct5tVrFaDTSFEdTZWarasFxejs9yOeU+A/RG6vMgWd+PxZdLszNOrH9fIthzWYTt4naocu2oS1wX3Bjc2MDofV1PPY8QvH4GIl4HF9JdbMkZ7VqjYX5juT0sFBALpvFh6MjbciccDgcwjU/j0gojLXVVawsLaF1fs4I43t7CAWDbHyTSLA9qWQS4s4O0qnUdUJOGg1H8HB5GQ/cbrza3WU4bYl+v0+8LaLZaKDdbqPVarEc0qjo2tSi/I/o5pD14793etW+TW8MedpfRA/Tk79wR1TOPeZUBQAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;shop square&quot; title src=&quot;/static/aa2f95dce9aa8ebe10a1d0438284b587/913fc/shop_square.png&quot; srcset=&quot;/static/aa2f95dce9aa8ebe10a1d0438284b587/bc34b/shop_square.png 293w,
+/static/aa2f95dce9aa8ebe10a1d0438284b587/da9f0/shop_square.png 585w,
+/static/aa2f95dce9aa8ebe10a1d0438284b587/913fc/shop_square.png 1170w,
+/static/aa2f95dce9aa8ebe10a1d0438284b587/efb0c/shop_square.png 1755w,
+/static/aa2f95dce9aa8ebe10a1d0438284b587/79b58/shop_square.png 2340w,
+/static/aa2f95dce9aa8ebe10a1d0438284b587/e6836/shop_square.png 3234w&quot; sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Similarly, as more and more transactions occur within its ecosystem, Facebook could set up a similar system and focus on small SMB loans. Some of the valuable data points it can collect to accurately estimate risk, sales potential, and repayment probability are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Advertising conversions and ROI from Instagram and Facebook ads&lt;/li&gt;
+&lt;li&gt;Social media marketing/inbound marketing campaign performance by measuring engagement, account growth velocity, and clickthrough rates (especially when paired with data from Pixel)&lt;/li&gt;
+&lt;li&gt;Product virality through analyzing consumers posts and tags&lt;/li&gt;
+&lt;li&gt;Sell through rate by tracking page visits, product selections, and sales&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Of course, even with all this data, it’s far from a slam dunk opportunity for Facebook. Comparatively, Shopify and Square have a much better 360° view of their SMB’s performance, whereas Facebook is limited to sales data conducted on its platform. Additionally, banks have extensive data on industry-specific historical performance and are experts on financial data segmenting, something that Facebook has no experience in. We think it would make sense for Facebook to partner with a bank to effectively roll out this small SMB loan program, and successfully open up a lucrative, diversified revenue stream.&lt;/p&gt;
+&lt;h3&gt;4. Point of Sale Financing&lt;/h3&gt;
+&lt;p&gt;On the other hand, instead of financing SMBs, Facebook could finance consumers. If you’ve ever bought something from Warby Parker, Casper, Mirror, or Peloton, you’ve probably seen an option to pay in small monthly installments, instead of shelling out three grand for your stationary bike (that you absolutely must have) at once. That’s powered by Affirm, a point of purchase financing solution with a dual benefit. Businesses see an increase in conversions because it no longer forces consumers to make that huge up-front financial commitment. In turn, it also helps customers spread out the costs in a more manageable way. Affirm makes money by either charging businesses commissions for financing their customers at 0% APR or by charging the end customers interest on their monthly installments for the convenience.&lt;/p&gt;
+&lt;p&gt;Facebook could/should do the same once Shops grows to become mainstream. This not only would substantially assist SMBs with sales, but also provide another significant revenue stream to Facebook.&lt;/p&gt;
+&lt;div style=&quot;max-width: 400px; margin: auto&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/dad5b27793f5095da6559eeaceab8dc6/fc413/affirm.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB78Mkk1qxcFA//8QAGxAAAwACAwAAAAAAAAAAAAAAAAECBBAREhP/2gAIAQEAAQUCOwnyVju340RLlb//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAdEAABAgcAAAAAAAAAAAAAAAAAARECEBIgITEz/9oACAEBAAY/AjCPJaozopt7P//EABsQAQACAwEBAAAAAAAAAAAAAAEAESExUSBB/9oACAEBAAE/IVDbU2yU5AFkYLBWjkcmHPxZSVrvj//aAAwDAQACAAMAAAAQXyAA/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQAQQRH/2gAIAQMBAT8Qe5Bdv//EABcRAAMBAAAAAAAAAAAAAAAAAAABERD/2gAIAQIBAT8QUHN//8QAHhABAAEEAgMAAAAAAAAAAAAAAREAITFRIKFBYXH/2gAIAQEAAT8QFkh7YpKgvJhHbevE3CJCOmk9sI2Ckb1SgEyZAAvBZ29VfXEqy/eH/9k=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;affirm&quot; title src=&quot;/static/dad5b27793f5095da6559eeaceab8dc6/fc413/affirm.jpg&quot; srcset=&quot;/static/dad5b27793f5095da6559eeaceab8dc6/e33f8/affirm.jpg 293w,
+/static/dad5b27793f5095da6559eeaceab8dc6/d5ce0/affirm.jpg 585w,
+/static/dad5b27793f5095da6559eeaceab8dc6/fc413/affirm.jpg 960w&quot; sizes=&quot;(max-width: 960px) 100vw, 960px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;It’ll be interesting to see how Facebook rolls out Shops in the coming months and if people actually adopt it. There’s value on the table for both SMBs and Facebook alike, and there’s a lot of ways Facebook can leverage Shops to keep building out a full suite of Social Commerce sales enablement tools in the future. At the same time, growing consolidation in the digital advertising space is worrying. And with continued scrutiny of Facebook misinformation, antitrust, and data privacy issues, it’ll be worth also following the potential societal ramifications of this “super-platform” Facebook keeps building towards.&lt;/p&gt;
+&lt;h3&gt;Sources&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.shopify.com/blog/facebook-shops&quot;&gt;https://www.shopify.com/blog/facebook-shops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://techcrunch.com/2020/05/19/facebook-shops/&quot;&gt;https://techcrunch.com/2020/05/19/facebook-shops/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.forbes.com/sites/pamdanziger/2020/05/31/facebook-shops-opens-for-small-businesses-is-it-a-dream-come-true-or-too-good-to-be-true/#54ba452113be&quot;&gt;https://www.forbes.com/sites/pamdanziger/2020/05/31/facebook-shops-opens-for-small-businesses-is-it-a-dream-come-true-or-too-good-to-be-true/#54ba452113be&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://stratechery.com/2020/platforms-in-an-aggregator-world/&quot;&gt;https://stratechery.com/2020/platforms-in-an-aggregator-world/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://about.fb.com/news/2020/05/introducing-facebook-shops/&quot;&gt;https://about.fb.com/news/2020/05/introducing-facebook-shops/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Bringing Debt to Tech]]></title><description><![CDATA[Preface:  “Debt is Bad” - this is a common mantra that pervades Silicon Valley, espoused by upstarts and veterans alike. Certainly debt does…]]></description><link>https://gatsby-casper.netlify.com/Debt/</link><guid isPermaLink="false">https://gatsby-casper.netlify.com/Debt/</guid><pubDate>Wed, 20 May 2020 10:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Preface:  &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;“Debt is Bad” - this is a common mantra that pervades Silicon Valley, espoused by upstarts and veterans alike. Certainly debt does not make sense for an early stage software business. For these early stage companies, finding product-market fit is paramount and the high risk nature of these start-ups simply does not play nicely with debt financing.&lt;/p&gt;
+&lt;p&gt;Indeed this leads us to the fact that &lt;strong&gt;because so many startups fail, equity investing is necessary.&lt;/strong&gt; However, against this supposed gospel, we take the contrarian view and believe as Alex Danco from Social Capital puts it &lt;strong&gt;“so many startups fail because of equity investing.”&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;so many startups fail because of equity investing. - Alex Danco, Social Capital&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Why? Well for a more mature company that does have product-market fit and solvent unit economics, growth is the first priority. But the risk profile of growth operations looks drastically different than that of initial product development. It is far less risky and the payout is relatively more capped. For example, hiring a salesperson is less risky than trying to build out a new product; it will also have more limited returns.&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5432af6f335a333a07ee2480db3bae48/5fae0/sales_prod.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 30.374999999999996%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsSAAALEgHS3X78AAABeUlEQVQY0wFuAZH+AKSHc6GZjqWPfLCNd+ndzvj06/v48uDOwbygjOTh1eTl3Nve4sHCxPL3+c7T2Pf696iws2d1ilJdcVZccgB4Z1ufmJCnm5HAubL08e/29fT////DsaWyi3Oko5rZ3Nfv8/mKio5pZ2W9wsb///95go9DVpEzVIpPT2kAl5WUsK+po6iqrLKz7O7y+vv7///5zcbEpYt3U0U2mJeUpauvMDAzSzkr6OLcoaWiZ2NkPVaUGjyIgGxtAKeoqF1YUpObn4+Wmrm3tv3+/tva0rCvtI99cMGgg25nXjxCRn9/flFJQLu8sYODfEJDUSpHihEyfWFhgQCempagmZSUkpCYnarU19mmoJVAQDxVTkikmY2uloCJdWVCSE+tsa1cTkbdn4l7cGcOEh9gaIFUZo43Q24Ac3NykZWcLS0tO0BFm6WwqJ2JemxZUUAybGFTbGRZiHZiSkpLfYOCaFRLrG5XMS0qGBcTJyUik5igsbKx1YnKzQIo8FgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Sales vs Prod&quot;
+        title=&quot;&quot;
+        src=&quot;/static/5432af6f335a333a07ee2480db3bae48/913fc/sales_prod.png&quot;
+        srcset=&quot;/static/5432af6f335a333a07ee2480db3bae48/bc34b/sales_prod.png 293w,
+/static/5432af6f335a333a07ee2480db3bae48/da9f0/sales_prod.png 585w,
+/static/5432af6f335a333a07ee2480db3bae48/913fc/sales_prod.png 1170w,
+/static/5432af6f335a333a07ee2480db3bae48/5fae0/sales_prod.png 1600w&quot;
+        sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Because of this limited upside, founders are reluctant to dilute their equity further to raise money for growth operations. This causes them to underinvest in distribution and growth and as Peter Thiel says &lt;strong&gt;“Poor distribution — not product — is the number one cause of failure.”&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Poor distribution — not product — is the number one cause of failure. - Peter Thiel&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What’s more is that tech companies with established channels of recurring revenue do have the predictable cash flows needed to service debt. Take SaaS businesses for example, the monthly payments that SaaS users make is similar in structure to the cash flows of a monthly mortgage payment. The only difference is that one is backed by an asset and the other is backed by trust that mass churn won’t occur. For an established SaaS company, this trust seems fair.&lt;/p&gt;
+&lt;p&gt;For these reasons we believe that debt is the missing piece for growth stage tech companies. But as we seek to defend this theory we come face-to-face with the old dogma “Debt is bad.”&lt;/p&gt;
+&lt;p&gt;Perhaps, but rather than just accepting this as is. We will do the following:&lt;/p&gt;
+&lt;h3&gt;Agenda&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Investigate the current problems with debt for growth stage tech companies&lt;/li&gt;
+&lt;li&gt;Examine better debt instruments&lt;/li&gt;
+&lt;li&gt;Reimagine the underwriting process using SaaS based metrics&lt;/li&gt;
+&lt;li&gt;Identify current companies who could potentially be the vendors of these new debt instruments.   &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Problems with Debt in its Current State&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Requires physical assets to serve as collateral. (Growth stage tech companies don’t have much of this)&lt;/li&gt;
+&lt;li&gt;High interest rates and need of personal guarantee from owners.&lt;/li&gt;
+&lt;li&gt;Length of underwriting process (2-6 months). Too long for any startup&lt;/li&gt;
+&lt;li&gt;Requires interest to be paid even on money that is not used at that time.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Solving 1&amp;#x26;2: Better Debt Instruments&lt;/h3&gt;
+&lt;p&gt;Lets first address problems 1 &amp;#x26; 2 by thinking about debt instruments with a fundamentally different structure than current loans which are slow and asset demanding.&lt;/p&gt;
+&lt;p&gt;There are several products that could appeal to businesses.&lt;/p&gt;
+&lt;div style=&quot;max-width:400px; margin: auto&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/efd21a79ae589bce438b64f9d2490762/c6894/clear_banc.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1050px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAAA8ElEQVQoz9WSsY6CQBCGeT0t9Rku9voQ2tJpQUG0daMFJR2hpyJx2QBxZYFVIUCBBNBJINypiYm5wjjFny+z889kJitc/xHCp811XXfwwFVVPTx18Mbkrund5DzPfd9PkgT4fD4dj/xyKbIsi6KIc66qahhyxjxCiGmanIeapjmO05op3adpijEGtizL8w6ghmFAR13X+/3ebDYdjX5EURwOB5PJWJKkIAhacxzHjDFKKVS7rmvbNgAoJAmxFov5arWUZRkhpCgKQuvtdoPxrjXDMmVZghZF0fCLPSGa4l/z823+HhYO3hga7uqF7/xhN4c+6ctLxhe9AAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;clear banc&quot; title src=&quot;/static/efd21a79ae589bce438b64f9d2490762/c6894/clear_banc.png&quot; srcset=&quot;/static/efd21a79ae589bce438b64f9d2490762/bc34b/clear_banc.png 293w,
+/static/efd21a79ae589bce438b64f9d2490762/da9f0/clear_banc.png 585w,
+/static/efd21a79ae589bce438b64f9d2490762/c6894/clear_banc.png 1050w&quot; sizes=&quot;(max-width: 1050px) 100vw, 1050px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Merchant Cash Advance:&lt;/strong&gt; ClearBanc uses this right now, albeit with little flexibility in their product. Companies can ask for a cash advance on their future sales for a fixed percentage fee (5%), and then pay back the lender as their revenue rolls in. Meanwhile, they can use the cash advance to fuel growth now.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;A Fixed Income Instrument:&lt;/strong&gt; This is a bit more of a bet for the lender. Lenders can offer large loans in exchange for a fixed percentage of future revenues for a pre-established time period. For example, a lender (like Stripe or Square Capital) offers 1 million dollars in exchange for 3% of monthly revenues for the next 24 months. Of course, these are arbitrary numbers, but note that this is a product designed specifically for high margin SaaS companies that can afford 3%, and for Stripe/Square to offer, since it may be the one handling payments for the company in the first place! It has much more data to set the product terms than does any other lender.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cash flow securitization:&lt;/strong&gt; This was suggested by Alex Danco in “Debt is Coming.” Businesses can sell their cash flows for debt, use the debt funding to acquire the next tier of customers, sell the cash flow for debt, ad infinitum. This is somewhat similar to #2 on this list, but the lender could securitize across many companies and then sell the financial instrument to any interested buyer. Because the instrument is now diversified (in some sense), it may be less risky overall. It also allows the lender to get the loan off its balance sheet, which may be in its interest depending on the particular details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We can imagine that each of these options will appeal to different customers, and they can choose what is best for them. The question now becomes how to design an underwriting process that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduces time of underwriting&lt;/li&gt;
+&lt;li&gt;Allows a startup to only pay interest on the debt it immediately needs.&lt;/li&gt;
+&lt;li&gt;Gives the lender high conviction that the startup can pay.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We now turn to some metrics that we believe will be useful for underwriting debt products.&lt;/p&gt;
+&lt;div style=&quot;max-width:400px; margin: auto&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/283b4e7c42e1202d4f892d346409f665/5fae0/metrics.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 53.8125%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABP0lEQVQoz41Sy27CMBDku+HMF6TH9gwXzuUDSIuIQCkXno6AIKK2DikOTpysva7jviilEiPL9tozmvWua/oMiPpq1P67KEGVUn0GSumyrObLYmuIlMrHBzUeI+Ka8ijJECuBWq1gOFRpepbaj7NEDbkAGqMlpelRWSvOeZFlWsq/L6rEH2e7PZ9FLKC84iDe3t45zk2r1arX6/fdriHsBXPpZJQEDHKrwtpJpVChNsNsGGO+73ue57pur9cLw9AQCglHyDkIQHnibPOJ43jgDdabDQA0m81Go9Futx3HMeadTqff79vCya9Ez96sJIjCLAbbMJwTMlks5rMZIWQ6nVJKDYe9+Oz16XKrgux59BaUCqrgcNBWYJAkiclcCKHRWIhv81/iXR5vMypNexTK5RIIQYsoiox/URTXfpJr8A4bJHNxv4X6PAAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;metrics&quot; title src=&quot;/static/283b4e7c42e1202d4f892d346409f665/913fc/metrics.png&quot; srcset=&quot;/static/283b4e7c42e1202d4f892d346409f665/bc34b/metrics.png 293w,
+/static/283b4e7c42e1202d4f892d346409f665/da9f0/metrics.png 585w,
+/static/283b4e7c42e1202d4f892d346409f665/913fc/metrics.png 1170w,
+/static/283b4e7c42e1202d4f892d346409f665/5fae0/metrics.png 1600w&quot; sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;h3&gt;Solving 3&amp;#x26;4: Metric Based Underwriting&lt;/h3&gt;
+&lt;p&gt;A growth stage tech company may be worthy of debt if it can show strength across these three fronts&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Retention&lt;/li&gt;
+&lt;li&gt;Margin&lt;/li&gt;
+&lt;li&gt;Growth&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Retention&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Revenue Churn:&lt;/strong&gt; Revenue churn rather than customer churn is often more telling for later stage company health. Regular customer churn does not illustrate whether it is your so-so customers or your strongest customers that are churning. For mature startups small monthly churns compound to massive numbers. 3% monthly churn =&gt; 31% yearly churn. Recovering this in the form of acquiring new customers is very expensive. This is a vital metric that must stay low in order for a company to be debt grade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Net Churn:&lt;/strong&gt; Revenue lost due to churn and contraction - Revenue gained from current customers . If this number is negative it shows that the company is able to grow revenues without adding new customers. This is a very positive sign for any debt issuer.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Margin&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lifetime Value (LTV) &gt;= 3 * Customer Acquisition Cost (CAC)&lt;/strong&gt;: This is a pretty simple rule of thumb but foundational to ensure good unit economics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Time to recover CAC:&lt;/strong&gt; CAC / Average MRR (monthly recurring revenue) of customer .This number is paramount to formulate the terms of the loan. If it takes 2 years to recover CAC, then creating a debt instrument whose lifetime is one year will just cause liquidity problems for the company.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Growth&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;MRR:&lt;/strong&gt; Plain and simple. There needs to be enough future cash flows to service the debt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Expansion Revenue:&lt;/strong&gt; additional revenue from current customers. Upselling and cross selling your current customers is a quicker way to generate returns than going after newer customers. Thus expansion revenue is more appropriate to service debt, which lies on a shorter time frame than equity&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These metrics are constantly evolving and as such capital could be deployed incrementally. As long as the KPI thresholds are met, the next round is deployed. This is mutually beneficial for two reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It protects the lender from &lt;strong&gt;overcommitting capital.&lt;/strong&gt; They only are obliged to invest if the metrics continuously look good&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;It prevents SaaS companies from having to frontload on debt and having to pay interest for it throughout.&lt;/strong&gt; In growth stage, capital needs six months from now could look very different than today, and a company should not have to pay interest for money it intends to use only after six months.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the last part of this exploration we ask ourselves the question “who would be the best vendors of these debt instruments?”&lt;/p&gt;
+&lt;h3&gt;Why Brex, Stripe, Square are Well Positioned&lt;/h3&gt;
+&lt;br&gt;
+&lt;div style=&quot;max-width:400px; margin: auto&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/41e1af7b1713886af82b860f45959153/abbb1/companies.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 32.481751824817515%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABzklEQVQY0z3Qz0uTAQDG8bcYNAaVyUT3w206t7cfK9OVr2ubbkZUh6G2dqttpENZG0GBdhhmdLQOYpqyoOUI6R8YdYk8hGwYGQSxqMCErbeVib8yqL7ZDj2X5/bh4RE8Xi8trRJOt4s2TzueDi+nz54hmUwiiiIKhQKlUolKpWKHsBPvSTezT9+T6J1j6PJLBqJvuX7tA8M3lxgZlRF0tXoqKvdRo9VQazRgqDPRZG/G7/ej1+vJZDJks1lyuRzTD9Ps3ruLsdtPCHW+InLhNQ+SBSYmioT6PnFlaBs83HgE636RxqajNB+zl/tUu5NA4DxOp4t/SSQSpFIpNjZ+oNOpmRp/xsVAnplHRX79/sP04+/0Dn7m6p1lhONSSxmSHBIOlwu3ZKejrZXO7m5OOByUSiUEQcBms1EoFKnRVDI5/pzIpUUSw0tk59dZeLNJz61vRO+vIJgtDWh0WgwmI3Xmesz1Jg4cOojP50OSpPLCfD6PLMusra1TXV3B5L1ZevqLjE594ePiFgvvtgiPLNOfXkWwiNb/oHH7P61eR4PVQigcRq1WEwwGicVixONxurrOUVW1h1R6nujAV6I3ZAbvrhAZWyU4s0nfi5/8BYzwEPjy1nR1AAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;companies&quot; title src=&quot;/static/41e1af7b1713886af82b860f45959153/913fc/companies.png&quot; srcset=&quot;/static/41e1af7b1713886af82b860f45959153/bc34b/companies.png 293w,
+/static/41e1af7b1713886af82b860f45959153/da9f0/companies.png 585w,
+/static/41e1af7b1713886af82b860f45959153/913fc/companies.png 1170w,
+/static/41e1af7b1713886af82b860f45959153/abbb1/companies.png 1644w&quot; sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;As shown above, to underwrite well, lenders will need data. We believe Brex, Stripe, and Square all have certain qualities that make them ideal candidates for providing debt in the target space. For one, all these companies have instant access to their customers’ daily revenue and account balances. They already use this to supply SMB loans. We believe they can expand their offerings to help more growth stage tech companies. And why should they bother? &lt;strong&gt;It is the same lesson that GE learned so many decades ago, helping to finance the growth of your customers is a great way to catalyze sales.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Stripe (Vertical Integration): Stripe’s ecosystem of fintech and legal products give them vertical integration for anyone trying to start and grow a digital business. A SaaS company that uses Atlas to launch, Payments for credit card processing, and Billing and Payouts to handle subscription revenue and costs would be more inclined to turn to Stripe Capital if they had a debt offering unique for SaaS companies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Square (Securitization): While it is true that Square’s current customer base is mostly not SaaS companies, Square Capital is already seasoned with the business model of securitizing SMB loans. We believe this can be extended by securitizing the recurring revenue generated by SaaS companies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brex (Industry Specialization): Brex’s goal is to become the “bank” for startups. To do this they must do two things: 1) Offer transactions and account services: This is already accomplished through Brex Cash 2) Offer lending services: This is what Brex could fulfill by offering debt instruments  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Brex is uniquely positioned to offer debt for SaaS companies because they have a deep understanding of the types of things on which SaaS companies spend money, based on their current customers.  &lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;“Debt is bad.” Maybe so. But perhaps a part of the negative image of debt comes from its potential to challenge the reigning VC financiers. We should not pretend that a capital stack solely based on equity is always the ideal way to grow a company. Tech companies are staying private longer, and it is important that we give them the options to finance growth for the future.&lt;/p&gt;
+&lt;p&gt;A special thanks to Alex Danco for his work “Debt is Coming” which was the inspiration for this piece.&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://alexdanco.com/2020/02/07/debt-is-coming/&quot;&gt;https://alexdanco.com/2020/02/07/debt-is-coming/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Titans of Stream, How Disney Should Price Plus]]></title><description><![CDATA[Preface:   With its highly anticipated “Disney Plus” streaming service set to launch in November, Disney is rushing into the media streaming…]]></description><link>https://gatsby-casper.netlify.com/Disney_Pricing/</link><guid isPermaLink="false">https://gatsby-casper.netlify.com/Disney_Pricing/</guid><pubDate>Sun, 03 May 2020 10:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Preface:   &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;With its highly anticipated “Disney Plus” streaming service set to launch in November, Disney is rushing into the media streaming business, eager to capture what it sees as the future of entertainment.&lt;/p&gt;
+&lt;p&gt;Yet The House of Mouse is not alone in charging into this frontier. A slew of media titans are entering this space and Netflix already lays claim to much of the market. With so much competition, Disney’s success will largely depend on the &lt;strong&gt;pricing strategy it deploys for its new stream offerings.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this article we will answer the question : &lt;strong&gt;How should Disney price Plus?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I find a lot of times in such abstract business problems that have loads of available information, its hard to figure out whats important. I want you to focus on how we use our framework to acquire initial information about the industry and then synthesize that information into testable hypotheses. These hypothesis drive further inquiry and help us focus in on the most relevant information .&lt;/p&gt;
+&lt;p&gt;Let’s get started!&lt;/p&gt;
+&lt;div style=&quot;max-width: 400px; margin: auto&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/66a9337bf11df13a85c8174a3b7152a2/5fae0/mockups.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAAD40lEQVQ4y0WUW0ycVRSFfzrATIaZ+X9m/rnPlOsw3EFuLRe5tYXKpTBAQaE0ChXlYrC0KRRKoYAwAkUDBZr0xcaYaFKb+mBMfKr61DSmT7VPEmwFHky0Lfr8eWZo9GFln5yTrKy1195Hcq+/xHF9D6M3nZx0P864ZCRJOkCEBlOUhHLyAp7PwHl9B9fKLs4w9g4QurvxHPeNF7jW/kIKE4oHvduP1+vC7nJjUmSMsknUWAwREqaGcdQL3xNt9nDIEo/GmoRGDdVENIqTmJJuXKt/CtLnB4S267vYEnMo8yVRVVhEWV4BR3IEiitIcjuRm2cxnpoiTtaQkuLnUGTUfy6iBUyOeGwLv+Jef4Hk3dxHDj6ltryGB9ODbH9+i2/nJhipruLu8m0WhmaEwkn0deO4FR0+fypOlwubzY7N4cRuVYlx+VAmfkad30LybLzEvLxLcVY+q8eK+G76HPdXJrkz2MmXPb2MNLRhCcwR0zhFjFaD0WJDES0xmURLTDIxumii1TjUmSfYRRZhQnVph6MlFdz8sIfN4Cq3gwN8NR7g5sgQXfX5WN/6iNi2RXL8PvwZBSQkJJPs8+H2esK2IxQ3zuVnuDf+FpY39jEvPqOy8g0unu0nGFxjuOUYZ1tbGA8uMdqaj6djCkPLxxRnWqiqTsdiiUSn1aLXGjEIQq0IyLH0VBDuHyi0CoUJGUW0Brro7+2nPLeajIxympsCNBdkih5O4eqaZb1X4tYHBn77OprO40Vcbhlg5fwCRa83Yrr2y/8p20XKalIWuf44cjLTsFptaDSRws4h8tITkUXCtqYxuswStbKWx7MS0+0VbIyMMH/+HNmphejHHmANhXJAuIc1PoVMl47DDjM2kZzDpmKS5fBYGOqvIDdd46g4j+dpuFcvcan1BGtXr3D1zSbSfK8hC4XOT/94NdhCoSEuC9Xhwe5NEkhAdR1GsXuJEiTGphmU1nkahMKLhRZ6EyROHcmls7mD45UlOFPzsAa38Wz+IwhFMo7gFvqyHtTRH8M4PPEDzrH7WCYeIneuYmpdwCwIS32J1JbWkB2fSZ77OH2F7/JOdjdOTynWxa1XhGGFO+g9aajeZOyil6l5xSIkMS5J2SgmA8bGSWLbl5jpG2Z++gu6T79PrmOY05mPOJP+O4bYPtG/R8JyaJdFMqGl1vlKw/Z0Oi2y0YAhRo82OopIcad0byKL4b4ceJtPBi4x1lBNcXIDnUN3qDvxEK3SjnLlJ7Ep20ghstD82OeeYB64i3noG4F7B3XwXvjsEi6MdZc5lV9CW2Ud1alpFLgzOPNegI6TozjSarDMPg5/EP8CQaQ3e5oozBkAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;mockups&quot; title src=&quot;/static/66a9337bf11df13a85c8174a3b7152a2/913fc/mockups.png&quot; srcset=&quot;/static/66a9337bf11df13a85c8174a3b7152a2/bc34b/mockups.png 293w,
+/static/66a9337bf11df13a85c8174a3b7152a2/da9f0/mockups.png 585w,
+/static/66a9337bf11df13a85c8174a3b7152a2/913fc/mockups.png 1170w,
+/static/66a9337bf11df13a85c8174a3b7152a2/5fae0/mockups.png 1600w&quot; sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Source : Dribble&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;If you’re in a rush here’s a quick summary&lt;/p&gt;
+&lt;h3&gt;30 Second Summary&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Disney’s media network revenue is stagnating as people are increasingly leaving cable. Disney hopes to enter the streaming industry to offset these losses.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The problem is that the streaming industry is becoming increasingly saturated with other media titans. A classic price cut is unlikely to work because some of Disney’s competitors (Amazon &amp;#x26; Apple) can &lt;strong&gt;vastly outspend them&lt;/strong&gt;, while others (Netflix) have proven to be &lt;strong&gt;relatively price inelastic&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Disney’s best bet to avoid a price war with the other titans is to &lt;strong&gt;work with Netflix to lower the price of a Netflix subscription.&lt;/strong&gt; This will free up dollars that consumers can then use to subscribe to Disney Plus. The key insight here is that Netflix and Disney are &lt;strong&gt;likely complementary goods&lt;/strong&gt; because they have very different content. Only when combined would they form an effective replacement for cable. I will expand upon this idea later in the article.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, for the full article…&lt;/p&gt;
+&lt;h3&gt;Agenda&lt;/h3&gt;
+&lt;p&gt;When people think about pricing they often think about costs. However, subscription based tech services usually have negligible variable costs anyways. What’s more important I’d argue is understanding how a pricing strategy fits under the constraints of company objectives, competitor retaliations, and consumer budgets. As such, in this article we will :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Determine Disney’s main objectives with launching Disney Plus and align our pricing strategy accordingly.&lt;/li&gt;
+&lt;li&gt;Understand the weapons that various competitors have and how we can develop a pricing play that minimizes the lethalness of their counters.&lt;/li&gt;
+&lt;li&gt;Determine how much consumers are willing to pay&lt;/li&gt;
+&lt;li&gt;Create pricing hypotheses from the above information&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/836e7dee0d8d17d063cf34c2582a7bd6/b1f26/framework.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 52.19084712755598%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAABP0lEQVQoz3VSzcqCQBT1Jdq16H3c9SytXBv4MC4KchMtDUJpoWT0Q0QUUUQJav5Vno97wQ+ymQMXZ+beuZ5z5yhooKoq/h6PR0ynU2y3WywWC7iuC9/3MZ/PMZvNcD6f/+vrOwQFAtQFn88HeZ6jKAqONE053u/3V91Xw/oPorhcLrBtmxkFQYDT6YTdbof7/S5k98WwmWjuZSp+JJOksixZHkl5vV7IsoyTxGo0GmE8HmMymcCyLAwGA3ieJ2dIl+kBNpsN1us19vs9Ho8HJ7vdLhRFQafTQbvdRqvV4r2qqpwnAj8NiWGSJNwkDEPEccyDJwyHQ/R6Pei6jn6/D8MwoGkaTNOUMxQdis5kM2xCkTWhNTFfLpdwHId9uFqtcDgc8Hw+hZaR2qb2ID1WFEW4Xq+43W48FrIMNZQp+QO0OOyEKZhXMwAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;framework&quot; title src=&quot;/static/836e7dee0d8d17d063cf34c2582a7bd6/913fc/framework.png&quot; srcset=&quot;/static/836e7dee0d8d17d063cf34c2582a7bd6/bc34b/framework.png 293w,
+/static/836e7dee0d8d17d063cf34c2582a7bd6/da9f0/framework.png 585w,
+/static/836e7dee0d8d17d063cf34c2582a7bd6/913fc/framework.png 1170w,
+/static/836e7dee0d8d17d063cf34c2582a7bd6/efb0c/framework.png 1755w,
+/static/836e7dee0d8d17d063cf34c2582a7bd6/b1f26/framework.png 2054w&quot; sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;h3&gt;Company objectives&lt;/h3&gt;
+&lt;p&gt;First thing’s first, why does Disney want to sell directly to consumer anyway? After all, it was making a cool &lt;strong&gt;$300 million&lt;/strong&gt; just sitting back and letting Netflix act as a distributor of its content.&lt;/p&gt;
+&lt;p&gt;Cleary Disney believes that it can do better. Scratch that, Disney believes that it &lt;strong&gt;must&lt;/strong&gt; do better. Why? Well a quick look at Disney’s revenue break down shows us that nearly &lt;strong&gt;half&lt;/strong&gt; of total revenue and operating income come &lt;strong&gt;from media networks and TV&lt;/strong&gt;. This is an industry that is taking increasingly heavy losses as more and more people cut cable in favor of streaming services. Indeed even if media networks revenue declines by 10% in the coming years, it will result in a &lt;strong&gt;2.5 billion dollar revenue loss&lt;/strong&gt;. $300 million is a trite sacrifice to make if Disney Plus can be a viable replacement.&lt;/p&gt;
+&lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/f21dab39b776b762e51ed0b5610a7e16/e334e/rev_breakdown.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 61.857142857142854%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAC3klEQVQozzWTW2sbRxiG9Z8KvQgtJS296FXpTXuVQMkvCK1JDyEJNpZoArmKY9fB0INbqAOOXRPqklpGB2t1WGlXq9XuWitLqmyd1jpah9snM+P24oWdj2+eeed7Z0OFQgHf92m32/R6PUzTxHVdVavVaqp+fn5OvV6n0WiomvyuVCqUSiW63a7qkf2SFbIsSyyqXFxcEHQ7dNot1WAYBrquK9m2rZTNZslkMmpjEAR0Oh1lQu6tVqtIVkie0qhJhy06wymj6YKrqytGo7HSeDxmOp0qDYdDBoOBql33jJTDZrOpHEpWqFi0iGZ8slqe4PA5l/m/GQrQYjZhMZ8ynwnNZ0JzpdlsxmQyUWDprtVqqVH8P4KQnje588TkfmSP4cp79HdXaQVjvLM2zfaA0WzBaHLtRkqC+v2+gsnRSHdyrp7nXV9Z1w1uhXW+De/Tj3zE6OAxWafN54+ybGynmNlHBHWPoD8UkECBumJ20pmEyYB84a5cLqtAQ5lsntsRAVzdox++SX8vgmY1+fRBnvXHL5j/8AGd2B/0hmMGQUvMrMN5q8O//zmrVHwc7xSrZF+nrKWz3A7nFPAy/CHBq1WSRp3PHgrgky0mkffpJXZI2y1+eu1j7P7M8PclasU09YZ4SlUX1zIo6hn0XI5Q8iTNFys6S8uvGK3cIHj5gOOczyffFXgW2WS+8i6X8W2235zx8b08B6vfsFh+h4Z+xK+Hpzzc1HHWv6L/45fktCShWCzOo+dveLr2ktzaXUoHW8RSBvfXjvnlxW8UN+7ixg/Y/0fn+2dR/txax9xcwjg5YnMnwb2nh0TXl8lvfE3sOCqurGnkMknxaDVSuknRFldwHVzbpOzYmE4Fzz+jcurhezalsoNuOZRsEUIhx1+v99jZ3ecwGieVShFKJBJo6Yz6I0yjQFEkJeN3XE/olLJdEiBXvTHLKuGIND1xoFwbhommpUkm4pwkEySTSd4CUKUrh3Zd1FoAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;rev breakdown&quot; title src=&quot;/static/f21dab39b776b762e51ed0b5610a7e16/e334e/rev_breakdown.png&quot; srcset=&quot;/static/f21dab39b776b762e51ed0b5610a7e16/bc34b/rev_breakdown.png 293w,
+/static/f21dab39b776b762e51ed0b5610a7e16/da9f0/rev_breakdown.png 585w,
+/static/f21dab39b776b762e51ed0b5610a7e16/e334e/rev_breakdown.png 700w&quot; sizes=&quot;(max-width: 700px) 100vw, 700px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;p&gt;&lt;em&gt;Source : The Motley Fool&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Thus Disney realizes that it will need to effectively monetize streaming in order to replace declining network revenue. But in order to do that it must first gain and secure market share.Our pricing strategy will have to balance this short term demand for market share with a long term need for profitability.&lt;/p&gt;
+&lt;p&gt;Now that we know a little more about company goals, let’s understand the competition a little better. Then we can dive into making pricing hypotheses.&lt;/p&gt;
+&lt;h3&gt;Competitor Overview&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Established Competitors&lt;/strong&gt; : The obvious incumbent here is Netflix. The $180 billion streaming titan enjoys the subscription of 70% of Americans. However, this titan does have a &lt;strong&gt;potential Achilles heel: Licensed content&lt;/strong&gt;. Despite Netflix’s impressive lineup of original shows, licensed content still accounts for 80% of viewing time. And with major pullbacks from Disney and NBC, Netflix is expected to lose content worth 20% of its total viewing time. Netflix is not blind to this and is spending vast sums of money to create original content to fill the void.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div style=&quot; float: right;max-width:400px;&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/64e62f613e2fd4dc7321495ef483b5b5/29038/competition.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 810px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 56.29629629629629%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAC4UlEQVQoz3WSfUzMcRzH71/zh5DcKbmifww9kKdsFfOQ/Op64q489mwuPTjHSFessLBoylPXWUV1StRO3Gnjciq3mtCskYc8bDbLjfnDPy9f52mz+eOzzz+fz+vzfr/3kSmnJvBvzfCKd3fvybH4iprmEYP3pBhm+aQgxRQREpSJ79R4AjU57tkZYtbHM869I/sfbLoAhc7LZrao8GX5hAZmsHSRgYUhuQQHbGJOUAahxZX4TlHh75VAkN8m967sX9iPa/6KJBQeErGRepZE7EG76yrqbTWs07WyOPEMG1RVrE2/gGQewFOeTPn+Bs6UXmbiuDV/gb+V+ckTUUyUUE6QmK8qIVp3hZXqelZtaWT1uT7C9BYiJBNR+musbhok95CFpyMujLXdIqJflt0w+c+umLCO6KgDlFTeRFPYiabMwdnGQXYX3SDutINaxyvSde2EZbWgqX9I7+VC6i61ErigBKWwLvuTmadK5BHLypjDbD92l5C9XQRnNpOmvcjQ80+MDAxTanJSXN2LpqCDME0jUudbys/Z6OvuYs/uY/hPSxEK5T9hIXOy0BvaMVT2oC6/w/gsC+FpDWgSz2O/7eTNmItqy0vMwrb2tJPjFQ7W6ixkH+nGZHSyIqKI6VN+WfbxiGWmUk3SiVbir/cjnbKizG1jxUYzKdvaMB4x8sLexUHrOypbn2Dre0/zjWGit16ioOQWeQUW8nRNzPRWC8tCYcDsZAI6ypCPVuHzsgrFyFHmD58kqt5IXGIdW3dco1goLzvpILXwJsWHbWiLbESmNrE+o4WK6vssDzcIp0Jh/JoCrjx6wIVvw2xx3cPwqRuzqx/zZyeNX3swDzzCantNfcsQURlm1Duv4yxvprOijX0V92m3jmCxj5KSZhKPr0G23G5Hzyiproeku3pQjdmo+fKYtI8d5H9oI+dzC8l9HWwutSMJYGSCie2ZddRUddFgFZlanqHNNxM0Vyc+JYnvq3r6PA3NZ/0AAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;competition&quot; title src=&quot;/static/64e62f613e2fd4dc7321495ef483b5b5/29038/competition.png&quot; srcset=&quot;/static/64e62f613e2fd4dc7321495ef483b5b5/bc34b/competition.png 293w,
+/static/64e62f613e2fd4dc7321495ef483b5b5/da9f0/competition.png 585w,
+/static/64e62f613e2fd4dc7321495ef483b5b5/29038/competition.png 810w&quot; sizes=&quot;(max-width: 810px) 100vw, 810px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+  &lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;New Entrants&lt;/strong&gt;:A host of competitors from Time Warner to Comcast are expected to make entry in the next year. NBC (owned by Comcast) and CBS all have beloved shows of their own including the current number one on Netflix (Friends). Furthermore these competitors are prepared to spend vast sums on original content. And then there are Amazon and Apple. Though they currently lack as much original content as some of the other players, their colossal size will allow them to spend orders of magnitude more on content creation than any competitor (not to mention that the size of their balance sheets allows them to take on way more debt if necessary).  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;h5&gt;In a world of titans, Amazon and Apple are Olympians&lt;/h5&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/3fb3379c062f5a0817c54524275ea36f/e0e05/olympians.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1024px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 49.70703125000001%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAAB1UlEQVQoz42R3U/TUBjG+2di4hWJV2q8kGhYovEjiqgXKmjMdLrJhQaFbHELE9yCw5lAYBPX0ZYO6tru0NZ+nW79YqfFty4aQrjwzZs3OW/O78lznkMd/V/Fcaxpmu/7hmHAVBQFllQQBI7jwDkMQ9d1Pc+Dzam8LEl/MHVIiHSgJ7AkSQzDwAQxURQFQZBl+VRYMTCJIl5UTeyubrIJjBDiOK7ZbAKvqirLssBjjEdWR5hpWmEYVDaYnmaWvm6zAsoV6wkMPnVdN/6WbduEkH/YSMI0DcOyX+Zr66299OJqZWPn4Vx54AVUvz9QUO8AIcuy4M1RFJ3ICSYjKO19dC9bypXqdzIfn85Xb70o9DSLOn4pIsPQByse2HZB1XGgXXeQydcyhdrU6+K1ZwsAp2bnb6YLDbabwFGcNNA+IcjCkLaNbfgCC+OBbe7w3am5T1cevb37qnjxfu7688UL09kb6Xz5W4s6iiOxw/f1X/vt1oCl+5XiWr3xbnlduD2BJs5pl8cXxs+mZj+cSc1cevBmbPLJ+ens2OTjqzPvITMqHh4SBxNsH2qK96NhVkvsNk3TnFwt4+Ule2VJ/PKZ5/aau126I33f/bnV7qxttrbaPCfIvwFNbAufs3ScHgAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;olympians&quot; title src=&quot;/static/3fb3379c062f5a0817c54524275ea36f/e0e05/olympians.png&quot; srcset=&quot;/static/3fb3379c062f5a0817c54524275ea36f/bc34b/olympians.png 293w,
+/static/3fb3379c062f5a0817c54524275ea36f/da9f0/olympians.png 585w,
+/static/3fb3379c062f5a0817c54524275ea36f/e0e05/olympians.png 1024w&quot; sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+*Source : Yahoo Finance*
+&lt;p&gt;This may seem like a grim landscape for Disney to accomplish its dual mandate of both large market share and long term profitability, but armed with this knowledge of competitors let us hypothesize some possible pricing strategies.&lt;/p&gt;
+&lt;h3&gt;Hypothesis 1: Fierce Price Undercuts&lt;/h3&gt;
+&lt;p&gt;Let’s think about what we know. &lt;strong&gt;Netflix is in a vulnerable state.&lt;/strong&gt; It’s losing much of its most popular content and in order to finance the production of replacement content it has to constantly increase prices. (Twice this year alone). Disney can market itself as a cheaper alternative and rapidly steal market share before Amazon and Apple have time to create and mobilize their own content armies. And because Netflix has to burn so much cash right now, it cannot drastically lower prices in response.&lt;/p&gt;
+&lt;p&gt;Given what we know, this hypothesis does sound promising. However in order to test it, we need to validate two major assumptions that it makes. Those assumptions are :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;There is a high cross price elasticity of demand between Netflix and Disney&lt;/strong&gt; : This is economics jargon for how much would the demand for Netflix fall given a certain price reduction in Disney. If the two are strong substitutes then a drastic reduction in price from Disney would allow them to capture a lot of market share from Netflix. But this is a major assumption that we need to validate.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/5a956480f1afb7758f3c3a4f799a8765/4c7b4/cross_price_elasticity.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1024px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 45.01953125%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdh0kUEH/8QAGhAAAQUBAAAAAAAAAAAAAAAAEgACEBEhQ//aAAgBAQABBQJtnpx0X//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAAIDAAAAAAAAAAAAAAAAAAEQAALB/9oACAEBAAY/ArGYwv/EAB0QAQABAwUAAAAAAAAAAAAAAAEAESFBEDFRkaH/2gAIAQEAAT8hJQN+dpXqzJfJTR8mM//aAAwDAQACAAMAAAAQA8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAVEQEBAAAAAAAAAAAAAAAAAAAQMf/aAAgBAgEBPxCH/8QAHBAAAgIDAQEAAAAAAAAAAAAAAREAITFRcRBB/9oACAEBAAE/EEiQhAqIKuz6HdaHdxkARlpuDA8tnP/Z&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;cross price elasticity&quot; title src=&quot;/static/5a956480f1afb7758f3c3a4f799a8765/4c7b4/cross_price_elasticity.jpg&quot; srcset=&quot;/static/5a956480f1afb7758f3c3a4f799a8765/e33f8/cross_price_elasticity.jpg 293w,
+/static/5a956480f1afb7758f3c3a4f799a8765/d5ce0/cross_price_elasticity.jpg 585w,
+/static/5a956480f1afb7758f3c3a4f799a8765/4c7b4/cross_price_elasticity.jpg 1024w&quot; sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;p&gt;&lt;em&gt;When I say high cross price elasticity, I mean high magnitude, technically speaking if Disney and Netflix were strong substitutes there would be a negative cross price elasticity&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;Disney will be able to raise prices in a prompt manner:&lt;/strong&gt; How long would Disney need to deploy these fierce undercuts to achieve its market share goals? How painful would the process of increasing prices be? Even if Netflix can’t match price cuts, could other new entrants? The last thing we want is Disney to be stuck in an unprofitable price war that it started.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Testing Assumption 1 - Cross Price Elasticity:&lt;/h3&gt;
+&lt;p&gt;Without historical Disney Plus pricing data, we don’t have an exact way of measuring cross price elasticity with Netflix. However we can estimate it by asking several questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Is Netflix really a substitute for Disney?&lt;/strong&gt; If I were a family thinking of leaving cable, I would want to replace it with both the violent and sexual hits of Netflix as well as the family friendly shows and sports of Disney/ESPN. This suggests that &lt;strong&gt;Disney and Netflix might actually be complementary goods.&lt;/strong&gt; The cheaper one service gets, the more likely a family will cut cable and subscribe to both services. The average cable subscription comes &lt;strong&gt;with over 200 channels&lt;/strong&gt;, plus live sports. Thus, you &lt;strong&gt;can’t fully replace cable with just one streaming service.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;How Elastic are Netflix’s Customers?&lt;/strong&gt; Despite increasing prices and shrinking content, Netflix has &lt;strong&gt;&lt;em&gt;still&lt;/em&gt;&lt;/strong&gt; managed to increase subscribers (see chart below), even as lower priced options like Hulu exist. This testifies to the relative demand inelasticity of Netflix’s customers. Want an explanation? Remember Netflix has a staggering 70% market penetration, meaning they have &lt;strong&gt;troves of data&lt;/strong&gt; and know exactly what viewers like and want to see. This is a powerful moat that keeps users locked in and prevents an easy invasion from other titans.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The evidence suggests that Netflix and Disney are complementary goods and that Netflix customers are fairly inelastic. Thus we can estimate that there is a low cross price elasticity. Assumption 1 fails&lt;/p&gt;
+&lt;h3&gt;Hypothesis 2: Commoditize the Complement&lt;/h3&gt;
+&lt;p&gt;Our first hypothesis failed because we recognized that Netflix and Disney might actually be complementary goods that together are substitutes for cable. We further learned that Netflix is a very sticky platform due to their vast data stores. As such, Disney must realize it probably won’t be able to steal vast market share from Netflix. &lt;strong&gt;Thus Disney should aim to make Netflix as cheap as possible.&lt;/strong&gt; This will free up consumer dollars so that when they cut cable they have room to buy Netflix as well as Disney. The major assumptions here are that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Disney can drive down the price of Netflix enough to warrant cutting cable while still being able to capture extra consumer surplus.&lt;/li&gt;
+&lt;li&gt;Consumers will buy Disney with their saved Netflix dollars and not go to some other competitor&lt;/li&gt;
+&lt;li&gt;We also need to figure out how much consumers would be willing to pay for Plus, observe how we calculate that information as we test assumption 1 below.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Testing Assumption 1 - Ability to Drive Down Netflix Price&lt;/h3&gt;
+&lt;p&gt;We need to figure out how much a consumer cutting cable is willing to pay for both Netflix and Disney. This is critical for any pricing strategy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;My assumption is around $20.&lt;/strong&gt; See the picture below for how I arrived at this number.&lt;/p&gt;
+&lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/a1d1bc6b7c17bb62d57749a3a168de1a/587f4/calculations.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 70.56179775280899%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAAB7klEQVQ4y3VT227TQBDNb0MFgpa3prQShIJaSOgl5aEXVDUIUG+CFwjwB7SocZOmvsWX2nHs3T3MbuykSeyVjs7Oevb4zIxdWqjU8eTFNuZf1rFQ2VHI9s9efSBkPMZ0nuSnpCH3pUfLG6jtH0O7MXDVviXoaHV0XGo3uLhq47LVIe4o/kvxBfE/eiZzZZ7Mv+6aeLf7FY9XNlF6UK7i87ffmF5sMIBr2/CcHsGB73uwTBMuxf0wmMlvnDcx9/w9Sg+XqmicNdVhN/Bh9gNYUQAzhRWFCJJ44rJIweWLuVBnhyc/7gme/1KHIV2MWIKYM/SJJQaEhHMIISCSBCKOx6AqWBTlCTbTVwsULSnAWi0wXQf3fXDPA6dWJBQrwdOfsw555iQHRYunnFtyJjjhLI0FY+A0FE6D4oYxdEqc3Oqqo7kOWY5D2QYxKlkD0wjtNnivB+66RSU3x+Ob7l3mUArLQcjBEEYlZ1OeEEw/G+3OQSfwcB246Ia+mrp0mNDUeeZUDMVleyQY47M9/PL9jzo04xAui6DHAdg9u4NR64uXbFsqWMPGwQksx4NhuTBsF6Y9ZN1yCmHY473t+Or3VYLl9V0srhGIy2/3hljfw3L1AK93PilUto+wWm+gsnWENxSv1D6qnCx/MdVYov1/26jprT0zl9EAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;calculations&quot; title src=&quot;/static/a1d1bc6b7c17bb62d57749a3a168de1a/913fc/calculations.png&quot; srcset=&quot;/static/a1d1bc6b7c17bb62d57749a3a168de1a/bc34b/calculations.png 293w,
+/static/a1d1bc6b7c17bb62d57749a3a168de1a/da9f0/calculations.png 585w,
+/static/a1d1bc6b7c17bb62d57749a3a168de1a/913fc/calculations.png 1170w,
+/static/a1d1bc6b7c17bb62d57749a3a168de1a/efb0c/calculations.png 1755w,
+/static/a1d1bc6b7c17bb62d57749a3a168de1a/587f4/calculations.png 1780w&quot; sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;p&gt;Netflix takes 13 of those $20 so only 7 are left for Disney. This is not a terribly low price and is in fact consistent with Disney’s current proposed price for plus. However it gives little room to increase prices in the future if need be. How then can Disney encourage Netflix to lower its prices so that it can capture a larger share of the surplus?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cut a Deal with Netflix&lt;/strong&gt; : Disney should make a deal with Netflix that makes Netflix subscription cheaper for those who have Disney Plus and visa versa. Now, Disney gets to instantly access Netflix’s massive customer base, with much less marketing costs. In addition, Netflix no longer has the same urgency to replace Disney content because Disney Plus is cheaper for their subscribers. This would shrink Netflix’s content creation costs and allow them to pass savings directly on to the consumer, further decreasing their prices. The added benefit is that if this deal is exclusive, new cord cutters would have little incentive to try out more expensive competitors. Why would I choose NBC if Netflix and Disney bundled together give me everything I need at a discount. &lt;strong&gt;This would validate assumption 2&lt;/strong&gt; . (Assumption two was making sure that users would spend their savings from Netflix on Disney and not another competitor)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exert Pressure with Hulu&lt;/strong&gt;: Hulu is the closest thing Disney has to a Netflix substitute. It could engage in mild price cuts to put a little pressure on Netflix into lowering its prices and cutting a similar deal as mentioned above.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Quick Projections&lt;/h3&gt;
+&lt;p&gt;Doing some quick numbers. Let’s say that Disney is unable to lower the price of Netflix and can only charge 7$ a month for Plus. At this rate, Disney believes that it can bring in 130 million subscribers by 2024 = about 11 billion in annual revenue. This is by itself very promising as Disney could cover even a 50% decline in media networks revenue with this (Note that such a decline is very unlikely).&lt;/p&gt;
+&lt;p&gt;If Disney could lower the price of Netflix and charge more itself, then it could drive even further profitability. Icing on the cake.&lt;/p&gt;
+&lt;h3&gt;Risks&lt;/h3&gt;
+&lt;p&gt;There is reasonable evidence to suggest the assumptions for hypothesis two are at least partially valid, and certainly the numbers are promising. However, a very reasonable critique of this “Commoditizing the Complement Plan ” is that making Netflix and Disney as a package together so attractive would only further incentives people to cut cable, which cannibalizes Disney’s single largest revenue stream: Media Networks. My response is that &lt;strong&gt;cable revenue is deteriorating due to market trends outside of Disney’s power.&lt;/strong&gt; It is in the company’s best interest to make sure that it captures those freed up cable dollars by tagging along with Netflix rather than seeing them go to another competitor.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;The theme of this article was minimize your research.&lt;/p&gt;
+&lt;p&gt;We were confronted with an abstract problem : How should Disney Price Plus? It would have been easy to get lost in mountains of industry research, but we were able to use our framework to quickly understand Disney’s motives and its competitor’s strengths and weaknesses.&lt;/p&gt;
+&lt;p&gt;From this framework we made several pricing hypotheses. It could have become easy again to get lost in research in order to validate these hypothesis. Instead we boiled down each hypothesis to several key assumptions that told us exactly what further information we needed.&lt;/p&gt;
+&lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/f4142c8ce51bc1bcb8b2bd6dc17bd065/f4b18/racing.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 33.067092651757186%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAACAElEQVQozw2Qz09SAQCA31nXnGP2QOABwjMf+ADlCSo97RlMsUPI0IAKTZSslhro1hKzlT+WOM1ybs1pl+bK5lrdch3qUIe2uvUX9Id8cfgO3/H7BJ/SxtazyRrTvKre58dZlc/HS3w6eczHd2uUJtKMXzE4211gv3KLw/0yx0erLC+vsb75msRIkcxEieruW7a2DxD2t4r8/l5lfanIm5cVzj5s8PPrc768mOHX3iI7SZ2ydoGNEYPVfILN1bvMz+TJjmUoLT4hHL2Kpl3CH+zhYt8Qwr+/h5we7DCZmWIyPc5sboL5Qp5CVGM60s6cHuBpKsbtviBDmpdcp0xUdtHdEaYr1Etnh05EM2hx+1E7DYSVB/cY0kcoZsssTJdJ9OikeqPoHol4q4M7IZk/c6OcjBmEJQsDLVZ6PW7skoy12UkwqGO1SNSfM+FwBxHUtjAOm4wRGaSQniLkD+L3qnhsdiIuJ5pF5H3K4FshyYCjGaXmqs2Gaj5PQDQh2Vtpccmo7SrXs6MI8b5rJPpvEvEPIEsKjQ2N1NfVYRctDLolNLGRjM/DitGNbjGRlprIBhSGtQ5CPi+x2CCJxDDbG2ucHu0htLoCmJtsyB4v8eFRJJuE29RAl81MTnGSrGW7RDNOs5kbqSSVRxVmSw/pvxxH8XrxKT5ymTxWUSRWW/UfAHkLTsfIeh0AAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;racing&quot; title src=&quot;/static/f4142c8ce51bc1bcb8b2bd6dc17bd065/913fc/racing.png&quot; srcset=&quot;/static/f4142c8ce51bc1bcb8b2bd6dc17bd065/bc34b/racing.png 293w,
+/static/f4142c8ce51bc1bcb8b2bd6dc17bd065/da9f0/racing.png 585w,
+/static/f4142c8ce51bc1bcb8b2bd6dc17bd065/913fc/racing.png 1170w,
+/static/f4142c8ce51bc1bcb8b2bd6dc17bd065/f4b18/racing.png 1252w&quot; sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;p&gt;&lt;em&gt;Source: Variety Magazine&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the end we learned that instead of Disney trying to lower their own prices, it might make most sense for them to try and lower Netflix’s prices.&lt;/p&gt;
+&lt;p&gt;It’s going to be an interesting next couple of months as we see a whole host of media titans vie for dominance on this fascinating frontier of entertainment.&lt;/p&gt;
+&lt;p&gt;Till next time!&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://variety.com/2018/digital/features/media-streaming-services-netflix-disney-comcast-att-1202910463/&quot;&gt;https://variety.com/2018/digital/features/media-streaming-services-netflix-disney-comcast-att-1202910463/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.nytimes.com/interactive/2018/11/16/business/media/disney-invests-billions-in-theme-parks.html&quot;&gt;https://www.nytimes.com/interactive/2018/11/16/business/media/disney-invests-billions-in-theme-parks.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.forbes.com/sites/greatspeculations/2019/03/08/loss-of-licensed-content-is-an-underrated-crisis-for-netflix/#20b62a302111&quot;&gt;https://www.forbes.com/sites/greatspeculations/2019/03/08/loss-of-licensed-content-is-an-underrated-crisis-for-netflix/#20b62a302111&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.pcmag.com/news/367423/the-new-entertainment-giants-welcome-to-the-streaming-indus&quot;&gt;https://www.pcmag.com/news/367423/the-new-entertainment-giants-welcome-to-the-streaming-indus&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.bcg.com/en-us/industries/technology-industries/pricing-tech-industry.aspx&quot;&gt;https://www.bcg.com/en-us/industries/technology-industries/pricing-tech-industry.aspx&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Uber in Credit, A Case Study]]></title><description><![CDATA[Preface:   A lot is going on with Uber right now. Pre IPO preparations are fully underway as the company is busily expanding its rewards…]]></description><link>https://gatsby-casper.netlify.com/UberInCredit/</link><guid isPermaLink="false">https://gatsby-casper.netlify.com/UberInCredit/</guid><pubDate>Wed, 10 Apr 2019 10:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Preface:   &lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;A lot is going on with Uber right now. Pre IPO preparations are fully underway as the company is busily expanding its rewards program and developing self driving vehicles. Amongst all of this activity, I’d like analyze an Uber product that I feel is often overlooked: &lt;strong&gt;The Uber Credit Card&lt;/strong&gt;. I understand that this is not a brand new product. But in this article I hope to demonstrate why Uber entered this market and why it structured the card the way it did. Furthermore, I’d like to illustrate the thought process a business uses when it considers entering a new market.&lt;/p&gt;
+&lt;p&gt;A little about the Uber credit card. One can easily apply for the card within the Uber app. It has zero annual fees and gives the following cash back rewards:&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/692aea1b2b50cfe3af3b180beff69f93/a4a56/rewards.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 494px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 25.708502024291498%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABkgBP/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFxABAQEBAAAAAAAAAAAAAAAAAAFBUf/aAAgBAQABPyHjKr//2gAMAwEAAgADAAAAEPv/AP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAAEEAwAAAAAAAAAAAAAAAAARMUFRASGR/9oACAEBAAE/EESPBK3ohrDH/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Credit Card Rewards&quot;
+        title=&quot;&quot;
+        src=&quot;/static/692aea1b2b50cfe3af3b180beff69f93/a4a56/rewards.jpg&quot;
+        srcset=&quot;/static/692aea1b2b50cfe3af3b180beff69f93/e33f8/rewards.jpg 293w,
+/static/692aea1b2b50cfe3af3b180beff69f93/a4a56/rewards.jpg 494w&quot;
+        sizes=&quot;(max-width: 494px) 100vw, 494px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Uber Card is a partnership between &lt;strong&gt;Uber, Visa, and Barclays&lt;/strong&gt;. Barclays is the bank that actually provides the money that backs the card, Visa is the network or “clearing house” that helps transfer the funds, and Uber is a distribution partner.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Agenda&lt;/h3&gt;
+&lt;div&gt;
+  &lt;div style=&quot; max-width: 200px; margin: auto&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/bd0e0197df6f1d9474387596f0ff672e/34b7f/framework.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 716px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 189.9441340782123%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAmCAYAAADEO7urAAAACXBIWXMAAAsSAAALEgHS3X78AAAEY0lEQVRIx62WV0ttSRCFj4jig+CLmHNEFAMYEQMo+iKKL+IfVAQVzDnngDlhzmLOOdXMV3f63K0zDs6901B07+rq1RVW1zk2+XO8v7/L4uKiLC8vy8TEhK5nZ2dldXVVpqamVNBtbm6qHjuE/aWlJVlbWxODY5O/BkBtbW3S2Ngoo6Ojuu7q6pLOzk5paWmR7u5uGRwclP7+fmltbdX9pqYm3RsfHzcwYnt7e5Pz83O5vb2V5+dneX19VeG2l5cXYZ/BbL6tcn9/L3d3d4rx+PgotqenJ/1g4DohDAwMyMrKimxvb9vDXlhYkJmZGQ15fX1d5ubmdDYOAHZxcfED8OrqSgEBAGh4eFg6OjoUYGhoSHp7e6Wnp0eam5t1PT09rcCAmoH3l5eXHwEZ+/v7msf6+nppb29XQGbyRv6I5ujoSLa2tnTmPIN02QGvr6/tgDc3NxoeHpiw+aaqhMgMGOk5ODhQG3JIzjVkXD05OVEgPEUoEIKOy8y30SHWNQIYs83Ej6e4jbA2wjcXGhZY9z7bKW1wFZc5wGzEevvGxoacnp6qDR4bDz8L1baBjDG3wKmHhwfd/Mw76+Abe2wRKMMZe1G4EU+hy/z8vFRXVys9qCqvg8TzzWthnpyc/EAZBt59oA2A5Irw4CCHoQugY2Nj0tfXp0DHx8dKF8MMzv0rbQgfEgPCi0HgIp6Tkq8GaVBAkLkVY0InJ2wSgnUmn8bGFMFaTKJUQFw2D9zMn6t3dnamB9j/SjjHpfb2BfA/CePw8PBDzr6yUx6CSpJx1/oymBE84xVY940eYc0euWf9oSgAE97e3p79MBzDmEMGFDEPgMtMnu3ti4Mo4RjVpAvDPzoyM50GoQNVVFRIVVWVtrCRkRG15VIi/Vs/ZFBxOAcX6X91dXW6NoQuKyuThoYG3YNO2NbW1mrvJFUKCLJJOMrd3V1tW7QrCkIK0LFHWlijY48Oz0syudTfFF4IuSNXNFCTeNPSMGRmzxTCFMZKLThsk28McvTdocTmqdEQyBf5sAq68vJyqays1LWxMXNNTY0Ka6UN1Y2MjBSbzfbbwp8BBUxJSVFFVlaW5OfnS25uruTl5UlBQYEUFhZKcXGxxMTESE5OjuqYkaKiIvH19dWzLi4u+nujgElJSar09PQUd3d3FQwDAwPFw8NDvLy8xM3NTdchISH67e3treLo6KhnnZ2dfwJy+/8RMhRSwNLSUomIiJD4+HiJi4v7TxIbG6sOJSQk6J+pb9GG9sTF36YNBz7/6hmBrNzMC2H9ed/aN3kkClhSUiJ+fn6acArh7+8vAQEBKkFBQapjNnqrLjw8XCU6Olp2dnZ+ABI/SSWPUVFREhwcbAegslQ/LCxMD/r4+KhNaGiogkMXUxTevgKmpaWpIjk5WTmZmZkpqampkp6erkmnWFyakZEh2dnZkpiYqHsAu7q62nnIL+YHwN8RJyenn4DmpTg4OPwyIAS3h8y/ADoz/xx+RWi0dG9Y8AchTFJC0OX7NwAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;framework&quot; title src=&quot;/static/bd0e0197df6f1d9474387596f0ff672e/34b7f/framework.png&quot; srcset=&quot;/static/bd0e0197df6f1d9474387596f0ff672e/bc34b/framework.png 293w,
+/static/bd0e0197df6f1d9474387596f0ff672e/da9f0/framework.png 585w,
+/static/bd0e0197df6f1d9474387596f0ff672e/34b7f/framework.png 716w&quot; sizes=&quot;(max-width: 716px) 100vw, 716px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  We will use the above framework to analyze Uber&amp;apos;s market entry into credit cards.&lt;/div&gt;
+&lt;p&gt;First, we will determine why (if at all) market entry makes sense. We will do this by asking the 3 questions in white blocks&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;If and only if&lt;/b&gt; we find strong positives for each of these questions will we move on to the next piece of the analysis. This will delve into the risks of market entry (Questions in black blocks)&lt;/p&gt;
+&lt;div&gt;
+&lt;div style=&quot;clear: both;&quot; /&gt;
+&lt;h3&gt;30 Second Summary&lt;/h3&gt;
+&lt;p&gt;I would recommend reading as much of the article as you can as this is more about thought process, but if you’re in a rush, here’s a quick summary.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Uber’s primary motivation for entering the credit card market is to generate low risk revenue streams that can offset the losses of its core ride sharing business.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Uber has a powerful means of distribution via its mobile app, and it has wisely positioned the card to be focused around millennials, a market segment that is underserved by current competitors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Uber needs to understand that due to the race to the bottom nature of the credit card industry, growing market share through simple rate hikes is unlikely to work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Without further ado, here is the full article…&lt;/p&gt;
+&lt;h3&gt;Motivations for Entry&lt;/h3&gt;
+&lt;p&gt;Let’s try to brainstorm some potential hypotheses of why Uber would want to enter the credit card market.&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;Hypothesis 1&lt;/strong&gt;: Generate customer loyalty: At first glance, it seems that Uber would want to launch this product to lock users into their service and lure them away from choosing rivals. Indeed this is a major reason that airlines issue such credit cards. But this idea simply ignores the facts. The Uber card offers 2% cash back on all online purchases. This means you would be getting the same rewards from an Uber ride as you would from a Lyft ride. So clearly Uber’s goal here is not to generate loyalty through some exclusive benefits program. Indeed it has a separate rewards program for that very purpose.&lt;/p&gt;
+&lt;div&gt;
+    &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/f33032c1ff9202ec4a00d3f58a2a2571/2e22a/revenue.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1170px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 54.01234567901234%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAACI0lEQVQoz3VTS48SQRCeP+jdk0c9uPsLViAmJBpdEziAyYbdVfdmSNTLejBGMSa8GR47Q3hlXUBwgHmzw8zA8FndKySyWkmnqru/qq76qlowTRODwQCTyQRXTE+nGI1G6Pf7cBY2/iXr9Xqrd21BkiR8y2QgyTLkfB6NchmFYhGlUhG18k9Ypg3DMGDbNl++7/8VNAiCrc1EmM1m0DQN9vU1YFnwmON8jsVigdGVB1XVeEBd18lW+flGWLCNeJ6HOfkJm4tgtYK3XGL158UV7f9X6pJwzJlJtVrFlGhi2TMt7L7GtOM43G63Ozwzxme9XqcCLKTTaX4Xj8e5jsViRE+J267rQthEtiwbH8/Pb8AEcqm0VCqFCnGazWZxcnwCXTMQCoU4JhwO80wTiQQqlQqviNEh5LI5pF6dEgcuHkUiHHxATo7v4c3ZGepNmWfw9l0arj/Hk2fPOSYajXKdTCYhVsUtFUKWOvsyHIFtzPF4b4/YXeJgfx9GTULq6AjF49coVYuI3nmIT++HeHrvLgJFR+TBfbjVC8QPD1F4EQdj3KfGCKZtQv6ax4+2gZ5YwkI10ZVqKHzoodO6RPNzA73uBPKXPLpNDa1cHpcNFZ1GDa3vA3TbXbQyF0SbQ/z7EFbLFcbEISN/RkthNg37SFH4+AyVX7yDij6DZWtQaIzGdMYww/GYjxTDsK7zwd6d9lt6Ywdr3GyDW3cqzbIoimCf5DemLiPzSpBSAwAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;revenue&quot; title src=&quot;/static/f33032c1ff9202ec4a00d3f58a2a2571/913fc/revenue.png&quot; srcset=&quot;/static/f33032c1ff9202ec4a00d3f58a2a2571/bc34b/revenue.png 293w,
+/static/f33032c1ff9202ec4a00d3f58a2a2571/da9f0/revenue.png 585w,
+/static/f33032c1ff9202ec4a00d3f58a2a2571/913fc/revenue.png 1170w,
+/static/f33032c1ff9202ec4a00d3f58a2a2571/2e22a/revenue.png 1296w&quot; sizes=&quot;(max-width: 1170px) 100vw, 1170px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Hypothesis 2&lt;/strong&gt;: Improve Liquidity. Uber took on a &lt;a href=&quot;https://www.cnn.com/2019/02/15/tech/uber-2018-financial-report/index.html&quot;&gt;staggering loss of $1.8 billion last year&lt;/a&gt;. So opening up new lines of business that can help the company regenerate its cash coffers makes sense. The question then becomes, approximately how much revenue could Uber hope to earn. To answer this, let’s do some quick market sizing shall we?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The transaction fee for each credit card purchase is about 2.4%. Once Visa, Barclays, and the acquirer(think of these as the guys who give the physical credit card reading hardware) get their cut, &lt;strong&gt;Uber is left with say about .1% on every transaction&lt;/strong&gt;. (I’m not even going to include Uber’s potential cut of the interest payments from overdue balances)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Uber reaches about 75 million different users a year. &lt;a href=&quot;https://www.uber.com/en-UA/blog/cash-and-card-ua-en/&quot;&gt;About 70% of these users pay with credit card&lt;/a&gt;. Let’s assume the average Uber credit user spends $20,000 a year (This represents an estimated average of users from both developed and emerging markets). If Uber can convert even 10% of these users to the Uber credit card then it can make &lt;strong&gt;$105 million a year&lt;/strong&gt;. What’s really amazing is that Uber has pretty much &lt;strong&gt;risked nothing&lt;/strong&gt;. Remember it is Barclays that is supplying the money to back the card.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the idea of a side credit card business generating so much cash seems outlandish to you, consider that &lt;a href=&quot;https://www.marketplace.org/2019/04/03/are-airlines-making-more-money-credit-cards-flying/&quot;&gt;Delta would have gone bankrupt several times if not for its lucrative credit card business&lt;/a&gt;.&lt;/p&gt;
+&lt;div&gt;
+   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/44e1937319f1c4ceaa4cc7799740b667/ce2cf/delta_card.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 63.4%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAADwUlEQVQ4yx2TW0zbVRzH/w9GXzTxxURjfDQ+IAUyrotM5gQ3cU5AAcecsgIFxr3QjZZ2jMtgs2DLyqWDtoyW0tJ7S+mFttACbbluAwrDxI2YGLM3X/WfnK9nPHzzPS+/T77n+zuHeRYSIhGR/Hsc72d/3xhgX/tRtJfdXxGyuz4+G3fUsZG5X1iPvoxd/iGXPf4kk9VXZbOevHT2z/cz2OfvpbPGN1L+U7yVzA5eTlYwu8EBHIRFSETlSMQUOIwNUZeDgnEQkeBpQIANVxNWTZVwTxVjLykTrz7IhLsiB5rCM1AxHIwyyZB/zEFv1aevmPhiH3a9zWQ/LCGJuJIcbj4iRxtj1DXkIDZB9tYVZDs0TGKONrJivU58dy6RJ++kETuVojyDPHwzmSgZDhkqTsW9Gs4fzLpDhKjlBtlc5GM3IMbhes9puqNYPz33YS/Sgx2/ENueNsSsPISt16AqOIuHTBLU5dkYe5tDxj9KJbLWM/i1KuUlE55vwbxaREzGaSzYdYj7+nAck1BoL1UPnke7aSVd9Ood2FxoRMxWDa+qBOPvpkBzKQsTH6aSqe8yyJgwC7K6tBPGP8ODaXaMBMNbsNiX4DHdxcGyAHvLYgoSn/a4T/1ZsBM7Pj7i9npEF7gw1uVjMj0D6sJsohPmkilhDuQ3KTCorYVN1UbMut8wq+pHwNCMbTeVh48nfgEF3cJeqJPq9umCdr0t2HDwEDFcxRz3c1gHCohJeoFMiz/DcG3qCePV1MI5coHYlD/DpanHoq4VQUMDlowCBM2dCFi6sGzvphJjyytC2N6JiP0WXFo+vFoefJPFxKPIJ8b+c5DWpJww7qlqWIcpcLQMTuVPcKsqsaS9gYXpWjpQD7euBau2doRtHVix8hEy87HmFGDZwkfA1AaPnkccqqtkVvoNpNUU6FRWwzR4jjhGvoZr9Ft4J0vgflQG7dD3mBkuxay8HH5dNeLOJvj1dTR5EyIOARL+m7AFptAZfkny1FskXzIBadXrhKoG6HtziFn6FU16ES7FZVjkV2CUlWBOVgrDyI+wKq8jamvAziLtzy3AqqsL+75mGIN6PNj6h0hCf5OOKScGuZwXjH28Btre88TwoBDGoSuYp4ms45XwqCoQmrmGsIGLNVMN1i31iFgasUXf61P6XV+s3YZE/xhJskOSI0+QokEzhnlpfzEaURbUohyi6ToLtTgXaskX0HQXYOZuHmb7zkPf/yUMA/kw3r8I1Z18zN0vhFVWRBdZBMW9CjQKuKS+nUvaW0sxxE0x/w9IZrNSFwhGGgAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;delta card&quot; title src=&quot;/static/44e1937319f1c4ceaa4cc7799740b667/ce2cf/delta_card.png&quot; srcset=&quot;/static/44e1937319f1c4ceaa4cc7799740b667/bc34b/delta_card.png 293w,
+/static/44e1937319f1c4ceaa4cc7799740b667/ce2cf/delta_card.png 500w&quot; sizes=&quot;(max-width: 500px) 100vw, 500px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Okay, so we have identified a clear reason why Uber might want to enter this market. However, even with clear motives for entry, there must be a scalable way for a business to distribute and advertise its product in order to be successful.&lt;/p&gt;
+&lt;h3&gt;Distribution&lt;/h3&gt;
+&lt;p&gt;Traditional credit card companies and banks may have countless brick and mortar locations and spend fortunes on advertising to spread the word on their products. In fact customer acquisition costs in this industry is routinely around &lt;strong&gt;$800 per new user&lt;/strong&gt;. Uber simply does not have the cash or real estate to match competitors on these traditional distribution channels.&lt;/p&gt;
+&lt;p&gt;What Uber does have is its app, and that might be the only channel it needs. As stated earlier, about 75% of Uber’s 90 million monthly users pay with a credit card. This alone is an audience that is bigger than all but the three largest credit card issuers (Visa, Mastercard, and Chase). Because the signup process takes place directly in the app, Uber has a clear means of distribution that it can access without having to spend the same mammoth budgets on advertising as other credit card companies.&lt;/p&gt;
+&lt;h3&gt;Clear advantage over competitors?&lt;/h3&gt;
+&lt;p&gt;Even with strong motives and distribution. A company’s market entry can only succeed if it has significant advantages over competitors. These advantages can come from:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A product that is magnitudes better than current options in major performance indicators such as speed, price, etc. (If you go with this option Peter Thiel claims you must be at least 10x better)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A product that addresses a major market gap. Ex (An unmet consumer need or a segment of the market which is left out)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The overall Uber credit card is nothing standout so it must address a market gap to be successful. Our job is to find such a gap if it exists. We will do this by &lt;strong&gt;segmenting the market&lt;/strong&gt;. Demographics, Geography, and Activities are all common segmentation techniques (amongst others). There doesn’t seem to be any major Geographical forces at play so I will leave this one out. From an activities perspective, it is true that Uber rewards traveling generously so you could say Uber is trying to target frequent travelers. But the problem is that this segment of the market already has plenty of cards that meet its needs well (Uber offers no advantage to this segment).&lt;/p&gt;
+&lt;p&gt;A third way we can segment the market is by &lt;strong&gt;Demographics&lt;/strong&gt;. If we break up the credit card market by generation we see some interesting statistics:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Less than a third of Millennials say they have a credit card, while more than half of people age 30-49 own one and nearly 70% of people over 65 do - Bankrate&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div style=&quot;max-width:500px; margin: auto&quot;&gt;
+    &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/d19828070b665fa90c7860a996d256cf/4d297/credit_card_img.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACSklEQVQ4y5XR3YsSURQA8PEh6CXQiHrtISKoaPsXeqrnIInofYkoqAgaeuhPCCIqAqWPB2l33U1aJChrcTGxrNV0c13WUfxYdZ1R73xdr3fu6c6s1m6L7XrgcJy5c36ewxWELeHz+YRxwzRNAQB2HoRCIaf6/f794XD4TiKRuB+NRsVkMimmUikxHo+L2WxW5M2iZVn3GGMPeF4d9u9A0+m0y66ZTMbDE8rVGpRrNSiVSlAsFqFSqQCfBuyglDqVg0sjQYyxA/J/d+u6rmitBjOVZk9VEUEIEVmWiaqqhJ8RDuIBGBkJ8heuQXXzL5HvexEexlYZ5V12r2lipshthpBqP9MBuDAS5Id/QEIIOjFThAMvV5mKe856mmaAIncBIc2Gdge3TtjvE3R2VoIjr/NM6xEH1B2w44CWtQny2Dt4ZrYIhzmI8CaIOLjBJ+x0NdjTyv+CExw89CrPLNq3W4FhDFSRgRoGNOQ2JdQab8LTQQmOBtbYfEGGWx9y8F6S4dr8Twj+asDEmxU6GW+NB56ckeDUdIFdX6yA8GgZbi6WQXi8ApMLVfC8yNHzkY1tIF//v7fcPT4lwbGpgnU7VmXC0xy7+6XChGd5diNaZQc5eOHTLuDfCZmb/+7M5ZsQzNVpso6sJ18l60eD14RkfVtHVmC5TmLrzmV9HrmyaRquQfUYhk6ci+xjGBWtVASCyaX4sF/D+nZQQw2nElPZ123XLjZb1cs8vSbueI2e6jWMtlczu15NV3i2Lr199/xK4OP0uWF/rb7m1N+DZJf/kjAbyQAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;credit card img&quot; title src=&quot;/static/d19828070b665fa90c7860a996d256cf/4d297/credit_card_img.png&quot; srcset=&quot;/static/d19828070b665fa90c7860a996d256cf/bc34b/credit_card_img.png 293w,
+/static/d19828070b665fa90c7860a996d256cf/da9f0/credit_card_img.png 585w,
+/static/d19828070b665fa90c7860a996d256cf/4d297/credit_card_img.png 960w&quot; sizes=&quot;(max-width: 960px) 100vw, 960px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+  &lt;/div&gt;
+&lt;p&gt;We could go into the reasons of why Millennials are so hesitant on buying credit cards. But the bottom line is that there is clearly a lack of millennial centered credit cards on the market. &lt;strong&gt;This is where Uber can make its entry.&lt;/strong&gt; It’s no coincidence that although its overall rewards are pretty lackluster, the card really shines in rewards for eating out and purchasing online, &lt;strong&gt;activities that Millennial dominate&lt;/strong&gt;. Perks that include credit on streaming services like Netflix and Spotify hint that Uber is clearly positioning itself to capture the unsaturated (and growing) Millennial market segment.&lt;/p&gt;
+&lt;h3&gt;Competitor Response?&lt;/h3&gt;
+&lt;p&gt;So clearly there are reasonable business motives, defined distribution channels, and a robust target market. These are all positive signs for market entry. However, if competitors are overly aggressive in response to Uber’s entry, potential benefits may be severely dampened.&lt;/p&gt;
+&lt;p&gt;To guess competitor responses it is often helpful to look at past cases of entry in the industry. There is however no historical precedent of a rideshare company issuing credit cards. Thus, I will be drawing parallels with &lt;strong&gt;airline credit cards as well as the broader credit card industry&lt;/strong&gt;. While not perfect analogies I think there are some useful insights to be gained.&lt;/p&gt;
+&lt;h4&gt;Lessons from Airline Credit Cards: Don’t make the card too specific&lt;/h4&gt;
+&lt;p&gt;American Airlines and United were the first airlines to start giving miles for spending on their credit cards. Business was lucrative because airlines could now sell miles in advance to credit card companies. In addition, reward miles helped increase customer loyalty towards a specific airline. Obviously though other airlines started doing the same thing in order to lock in customers, saturating the field. Then, some credit card companies (like Discover it) started creating cards that could be used with any airline, in some cases &lt;strong&gt;diminishing the value of airline specific cards&lt;/strong&gt;&lt;/p&gt;
+&lt;div&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/774049dd0a1121ab01fac0db9a2b092d/c2d30/discover_card.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 528px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 25.757575757575758%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsSAAALEgHS3X78AAABPElEQVQY0wExAc7+AKa0xHybt4KryH+uzX6oxYKfus3T1c/aq8nWp9TcrNTdq8vWp8zetOnC0OZ6sOqOu+2YweyVwOaAs+mqyQBMZ4oZUIMATo0CXp8IU4gJPniXpaehumaVr1udt1Cou1qTqk+Rvmraf57VIXzeI3/oM4zlNofYDm/bWJoAYXOPSWqPC1SJImmbP2GDLU19m6iqi6hue51feaBMiqZbeJVPfK1t14Wh0kmO2TaF4z+R4UqJ0ih02WyiAEdXdQEkVxQ+bgo8cBQ6aSA5ZI+anUV2KzVrIUR2KUB1JTtvJ1SMSsp/lsAAV8YWZ84cbsgYa7wVX8tgjgC8wMimr72ps8Gqs8Krs7+sssDT1da1xa+uwKmxwqqxwqqwwKm6zLfkztTcpb3eqMDgqMHfqsHbqLziw9CaMagkbTi4hAAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;discover card&quot; title src=&quot;/static/774049dd0a1121ab01fac0db9a2b092d/c2d30/discover_card.png&quot; srcset=&quot;/static/774049dd0a1121ab01fac0db9a2b092d/bc34b/discover_card.png 293w,
+/static/774049dd0a1121ab01fac0db9a2b092d/c2d30/discover_card.png 528w&quot; sizes=&quot;(max-width: 528px) 100vw, 528px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Uber has clearly learned from this history and acted in a brilliant way that disables an aggressive competitor response on this front. By giving the same rate back on any rideshare, Uber is preventing other credit companies from trying to win back market share by offering an “any rideshare company” credit card. In essence, &lt;strong&gt;Uber saw how competitors might react… and did it first.&lt;/strong&gt;&lt;/p&gt;
+&lt;h4&gt;Lessons from the Broader Industry: Don’t race to the bottom&lt;/h4&gt;
+&lt;p&gt;In 2003, the average US credit card reward rate was about 1.1%. Firms tried outdoing each other by offering more and more lavish rewards. In 2 short years the average reward rate had &lt;strong&gt;increased by about 50%&lt;/strong&gt;. Uber needs to understand that because of these race to the bottom dynamics, it might have little choice but to raise its rewards if competitors do so. And likewise, it needs to understand that attempts to gain market share by simply raising rewards are unlikely to have a major effect because competitors will simply match them. In essence Uber is facing the classic &lt;strong&gt;kinked demand curve problem of oligopolistic markets&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Exit Strategy?&lt;/h3&gt;
+&lt;p&gt;No matter how promising a market entry looks there must be a clear exit strategy. Markets can sour and losses can surpass estimates. If exiting is too costly, the risk of entry may not be justified.&lt;/p&gt;
+&lt;p&gt;I don’t know the specifics of the Uber Barclays contract, but a smart one would have allowed Uber to sell its stake in the card to Barclays after x years. In this case a card exit would be relatively cheap as the only cost Uber might have to bear is replacing the actual plastic cards. All in all, this would be a solid plan that makes a less painful exit possible.&lt;/p&gt;
+&lt;div style=&quot;max-width: 300px; margin: auto&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/cc30fce007e135c7621725344838fb3b/0ae04/dribble_cards.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 800px;&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQP/2gAMAwEAAhADEAAAAdeg6FOHjP8A/8QAGhABAAMAAwAAAAAAAAAAAAAAAgABAxEiMv/aAAgBAQABBQK3K07Zvgv2MrcOQNf/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIREjH/2gAIAQMBAT8BxuN8EpH/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREC/9oACAECAQE/AblFP//EABoQAAICAwAAAAAAAAAAAAAAAAABESECEkH/2gAIAQEABj8CgersvMtj4iIP/8QAGhAAAwEBAQEAAAAAAAAAAAAAAAERITFBYf/aAAgBAQABPyHR8T0ql0+sVFTdFavIiM5uGJX9Z//aAAwDAQACAAMAAAAQp8//xAAZEQEBAAMBAAAAAAAAAAAAAAABEQAhMaH/2gAIAQMBAT8Qlp05XuCAp7n/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQCh/9oACAECAQE/EBEteGabv//EAB4QAQACAgEFAAAAAAAAAAAAAAEAESExQWFxgaGx/9oACAEBAAE/EDrWbCuJiWFupOd+NzOBDkX3G1e2ANkUraqZKn17w4KvVWf/2Q==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot; alt=&quot;dribble cards&quot; title src=&quot;/static/cc30fce007e135c7621725344838fb3b/0ae04/dribble_cards.jpg&quot; srcset=&quot;/static/cc30fce007e135c7621725344838fb3b/e33f8/dribble_cards.jpg 293w,
+/static/cc30fce007e135c7621725344838fb3b/d5ce0/dribble_cards.jpg 585w,
+/static/cc30fce007e135c7621725344838fb3b/0ae04/dribble_cards.jpg 800w&quot; sizes=&quot;(max-width: 800px) 100vw, 800px&quot;&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;I hope this showed you how we think about entering new markets. We systematically thought about what Uber needs to consider for a smart entry and in doing so we discovered why Uber structured the card the way it did. Next time you wonder why a product is marketed or designed a certain way, consider walking through this framework .&lt;/p&gt;
+&lt;p&gt;In summary, we saw that the card generates substantial low risk revenues, takes advantage of the market gap facing millennials, and offers its rewards in a way that mitigates aggressive competitor responses. It’s a smart business move by Uber and I look forward to see if they can grow their position in this fascinating market.&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnn.com/2019/02/15/tech/uber-2018-financial-report/index.html&quot;&gt;https://www.cnn.com/2019/02/15/tech/uber-2018-financial-report/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.marketplace.org/2019/04/03/are-airlines-making-more-money-credit-cards-flying/&quot;&gt;https://www.marketplace.org/2019/04/03/are-airlines-making-more-money-credit-cards-flying/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.uber.com/en-UA/blog/cash-and-card-ua-en/&quot;&gt;https://www.uber.com/en-UA/blog/cash-and-card-ua-en/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.bankrate.com/finance/consumer-index/money-pulse-0616.aspx&quot;&gt;https://www.bankrate.com/finance/consumer-index/money-pulse-0616.aspx&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
