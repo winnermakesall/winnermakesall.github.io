@@ -2,7 +2,7 @@
 layout: post
 title: Facebook Shops, A Deep Dive
 image: featuredImages/fb_shops.jpeg
-author: ["Alex Hu","Tej Chilukuri"]
+author: ["Rishub Nahar","Alex Hu","Tej Chilukuri"]
 date: 2020-07-26T10:00:00.000Z
 tags: ["Facebook","Consumer Tech"]
 draft: false
